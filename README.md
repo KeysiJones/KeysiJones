@@ -18,10 +18,10 @@ Here are some ideas to get you started:
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/keysi-jones-fernandes-35482b139/)](https://www.linkedin.com/in/keysi-jones-fernandes-35482b139/)
 
 ### About me
-I'm a {backend and frontend} developer and technical instructor at [@treinaweb](https://www.treinaweb.com.br/).
+I'm a {backend and frontend} developer <!--and technical instructor at [@treinaweb](https://www.treinaweb.com.br/).-->
 
 
-[![KeysiJones's github stats](https://github-readme-stats.vercel.app/api?username=KeysiJones)](https://github.com/KeysiJones/github-readme-stats)
+[![KeysiJones's github stats](https://github-readme-stats.vercel.app/api?username=KeysiJones&theme=dark&show_icons=true)](https://github.com/KeysiJones/github-readme-stats)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=KeysiJones&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
