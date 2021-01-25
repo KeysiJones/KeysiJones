@@ -32,4 +32,4 @@ I'm a {backend and frontend} developer <!--and technical instructor at [@treinaw
 
 -->
 
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=SpringBoot-Jpa-Crud)](https://github.com/KeysiJones/SpringBoot-Jpa-Crud)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=SpringBoot-Jpa-Crud&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/SpringBoot-Jpa-Crud)
