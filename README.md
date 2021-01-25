@@ -32,4 +32,4 @@ Here are some ideas to get you started:
 
 -->
 
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=SpringBoot-Jpa-Crud&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/SpringBoot-Jpa-Crud)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=dsdeliver-sds2&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/dsdeliver-sds2)
