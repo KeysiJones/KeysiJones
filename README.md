@@ -21,7 +21,7 @@ Here are some ideas to get you started:
 I'm a {backend and frontend} developer <!--and technical instructor at [@treinaweb](https://www.treinaweb.com.br/).-->
 
 
-[![KeysiJones's github stats](https://github-readme-stats.vercel.app/api?username=KeysiJones&theme=dark&show_icons=true)](https://github.com/KeysiJones/github-readme-stats)
+[![KeysiJones's github stats](https://github-readme-stats.vercel.app/api?username=KeysiJones&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/github-readme-stats)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=KeysiJones&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
