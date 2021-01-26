@@ -21,7 +21,7 @@ Here are some ideas to get you started:
 🔥🔥🔥 I'm a FullStack developer passionate about technology, life-long student 🔥🔥🔥<!--and technical instructor at [@treinaweb](https://www.treinaweb.com.br/).-->
 
 
-[![KeysiJones's github stats](https://github-readme-stats.vercel.app/api?username=KeysiJones&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/github-readme-stats)
+[![KeysiJones's github stats](https://github-readme-stats.vercel.app/api?username=KeysiJones&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=KeysiJones&layout=compact&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/SpringBoot-Jpa-Crud)
 
