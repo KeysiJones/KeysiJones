@@ -3,7 +3,7 @@ import "@splidejs/splide/dist/css/splide.min.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import Splide from "@splidejs/splide";
 import frete from "./fotos/frete.jpeg";
-import frete2 from "./fotos/frete2.jpeg";
+// import frete2 from "./fotos/frete2.jpeg";
 import carro from "./fotos/carro.jpeg";
 import {
   fab,
@@ -67,7 +67,11 @@ function App() {
                 <img src={frete2} className="rounded"></img>
               </li> */}
               <li className="splide__slide">
-                <img src={carro} className="rounded"></img>
+                <img
+                  alt="caminhonete com móvel na parte de trás"
+                  src={carro}
+                  className="rounded"
+                ></img>
               </li>
             </ul>
           </div>
@@ -86,7 +90,7 @@ function App() {
             className="font-bold"
             href="https://wa.me/5551980179373/?text=Oi, tudo bem ? eu gostaria de fazer um orçamento de frete."
           >
-            Agenda agora
+            AGENDA AGORA
           </a>{" "}
           o teu carreto !
         </p>
