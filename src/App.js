@@ -81,8 +81,8 @@ function App() {
           </div>
         </div>
         <p className="text-2xl mt-4 font-thin text-center">
-          Fazemos <b>pequenos fretes/carretos</b> em Porto Alegre e em cidades
-          vizinhas.
+          Fazemos <b>pequenos fretes/carretos</b> em Porto Alegre e no litoral
+          gaúcho.
         </p>
         <p className="text-2xl mt-4 font-thin text-center">
           Não fica no aperto, chama a JC e{" "}
