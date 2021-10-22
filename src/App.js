@@ -21,7 +21,7 @@ function App() {
         <div>
           <p
             style={{ textShadow: "#f3b80c -2px 4px 0px" }}
-            className="text-gray-600 font-bold pt-4 text-center text-4xl"
+            className="text-gray-600 font-bold pt-4 text-center text-3xl"
           >
             Meu nome é Jones... <br /> Keysi Jones !
           </p>
@@ -37,7 +37,7 @@ function App() {
             className="flex m-4 flex-col text-center justify-center"
           >
             <button
-              onClick={() => window.location.replace("#")}
+              onClick={() => window.location.replace("#meus-projetos")}
               className="p-4 m-4 bg-red-400 text-white rounded-xl"
             >
               <p className="font-bold">Meus projetos</p>
@@ -48,6 +48,14 @@ function App() {
             >
               <p className="font-bold">Fale comigo</p>
             </button>
+          </div>
+          <div id="meus-projetos">
+            <p
+              style={{ textShadow: "#f3b80c -2px 4px 0px" }}
+              className="text-gray-600 font-bold py-4 text-center text-2xl"
+            >
+              Projetos desenvolvidos
+            </p>
           </div>
           <div className="m-4">
             <div className="pb-8 px-4">
