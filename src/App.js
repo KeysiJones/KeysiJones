@@ -10,29 +10,22 @@ import keysiPhoto from "./fotos/keysi-contorno.png";
 import institutoAdmin from "./fotos/instituto-admin.png";
 import instipoa from "./fotos/instipoa.png";
 import jccarretos from "./fotos/jccarretos.png";
-import thug from "./fotos/thug.png";
+import thug from "./fotos/keysired.png";
+// import thug from "./fotos/thug.png";
 
 // library.add(fab, faLinkedin, faCheckSquare, faCoffee);
 const openWhatsApp = () =>
   window.location.replace("https://wa.me/5551993667706?text=Oi Keysi Jones =D");
 function App() {
   return (
-    <div className="bg-yellow-300 h-screen">
-      <div className="bg-yellow-300 p-2">
-        <div className="blink">
-          <p
-            style={{ textShadow: "#f3b80c -2px 4px 0px" }}
-            className="text-gray-600 font-bold pt-4 text-center text-3xl"
-          >
-            Meu nome é Jones... <br /> Keysi Jones !
-          </p>
-        </div>
+    <div className="bg-white h-screen">
+      <div className="bg-white p-2">
         <div className="blink">
           <div>
             <img
               id="thug"
               style={{ transform: "scale(1.0)" }}
-              className="m-auto rounded-full absolute left-0 right-0"
+              className="m-auto absolute left-0 right-0 mt-4"
               alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
               src={thug}
             />
@@ -43,6 +36,14 @@ function App() {
               alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
               src={keysiPhoto}
             />
+          </div>
+          <div className="blink">
+            <p
+              // style={{ textShadow: "#f3b80c -2px 4px 0px" }}
+              className="text-gray-600 font-bold pt-4 text-center text-3xl"
+            >
+              Meu nome é Jones... <br /> Keysi Jones !
+            </p>
           </div>
           <div
             id="main-buttons"
@@ -63,7 +64,7 @@ function App() {
           </div>
           <div id="meus-projetos">
             <p
-              style={{ textShadow: "#f3b80c -2px 4px 0px" }}
+              // style={{ textShadow: "#f3b80c -2px 4px 0px" }}
               className="text-gray-600 font-bold py-4 text-center text-3xl"
             >
               Projetos desenvolvidos
