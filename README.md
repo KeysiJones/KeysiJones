@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+### Meu nome é Jones, Keysi Jones 😎
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!--
+**KeysiJones/KeysiJones** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-## Available Scripts
+Here are some ideas to get you started:
 
-In the project directory, you can run:
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
 
-### `npm start`
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/keysi-jones-fernandes-35482b139/)](https://www.linkedin.com/in/keysi-jones-fernandes-35482b139/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Sobre mim
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Sou um desenvolvedor focado em tecnologias de frontend. Atualmente trabalho com Node.JS, NEST, MongoDB e TypeScript na HypeFlame.<!--and technical instructor at [@treinaweb](https://www.treinaweb.com.br/).-->
 
-### `npm test`
+[![KeysiJones's github stats](https://github-readme-stats.vercel.app/api?username=KeysiJones&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!--
+- [Courses](https://www.treinaweb.com.br/cursos-online?q=fagner+pinheiro) 👨🏼‍🏫 - It's are technical courses on many technologies, such as Django, Flask, Python, Kotlin, Flutter, Dart, Git and more
+- [Blog](https://www.treinaweb.com.br/blog/author/fagner-pinheiro/) ✍🏼 - I'm write about many things.
+- [Website](https://fagnerpsantos.dev/) 💻 - Working on it.
 
-### `npm run build`
+-->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Projetos relevantes para a stack que desejo trabalhar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=Backend-Instituto&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/Backend-Instituto)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=instituto-admin&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/instituto-admin)
 
-### `npm run eject`
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=Backend-Blog&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/Backend-Blog)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=githobby&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/githobby)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=portfolio&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/portfolio)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=todolistapp&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/todolistapp)
