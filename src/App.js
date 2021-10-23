@@ -6,10 +6,11 @@ import "./App.css";
 // import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
 // import axios from "axios";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import keysiPhoto from "./fotos/keysi-contorno.png";
+// import keysiPhoto from "./fotos/keysi-contorno.png";
 import institutoAdmin from "./fotos/instituto-admin.png";
 import instipoa from "./fotos/instipoa.png";
 import jccarretos from "./fotos/jccarretos.png";
+import thug from "./fotos/thug.png";
 
 // library.add(fab, faLinkedin, faCheckSquare, faCoffee);
 const openWhatsApp = () =>
@@ -30,7 +31,7 @@ function App() {
           <img
             className="m-auto rounded-full"
             alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
-            src={keysiPhoto}
+            src={thug}
           />
           <div
             id="main-buttons"
