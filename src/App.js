@@ -6,7 +6,7 @@ import "./App.css";
 // import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
 // import axios from "axios";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import keysiPhoto from "./fotos/keysi-contorno.png";
+import keysiPhoto from "./fotos/keysi-contorno.png";
 import institutoAdmin from "./fotos/instituto-admin.png";
 import instipoa from "./fotos/instipoa.png";
 import jccarretos from "./fotos/jccarretos.png";
@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="bg-yellow-300 h-screen">
       <div className="bg-yellow-300 p-2">
-        <div>
+        <div className="blink">
           <p
             style={{ textShadow: "#f3b80c -2px 4px 0px" }}
             className="text-gray-600 font-bold pt-4 text-center text-3xl"
@@ -27,15 +27,26 @@ function App() {
             Meu nome é Jones... <br /> Keysi Jones !
           </p>
         </div>
-        <div>
-          <img
-            className="m-auto rounded-full"
-            alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
-            src={thug}
-          />
+        <div className="blink">
+          <div>
+            <img
+              id="thug"
+              style={{ transform: "scale(1.0)" }}
+              className="m-auto rounded-full absolute left-0 right-0"
+              alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
+              src={thug}
+            />
+            <img
+              id="regular"
+              style={{ transform: "scale(1.0)", opacity: 0 }}
+              className="m-auto rounded-full left-0 right-0 opacity-0"
+              alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
+              src={keysiPhoto}
+            />
+          </div>
           <div
             id="main-buttons"
-            className="flex m-4 flex-col text-center justify-center"
+            className="flex m-4 flex-col text-center justify-center 1s"
           >
             <button
               onClick={() => window.location.replace("#meus-projetos")}
@@ -60,16 +71,28 @@ function App() {
           </div>
           <div className="m-4">
             <div className="pb-8 px-4">
+              <p className="text-xl text-gray-700 font-semibold text-center m-4">
+                JC Carretos é um projeto que desenvolvi para divulgar os
+                serviços de frete que meu pai realiza.
+              </p>
               <a href="https://jccarretos.vercel.app/">
                 <img className="rounded-md" alt="project" src={jccarretos} />
               </a>
             </div>
             <div className="pb-8 px-4">
+              <p className="text-xl text-gray-700 font-semibold text-center m-4">
+                O Instipoa é um app feito para acessar as aulas do Instituto
+                Porto Alegre.
+              </p>
               <a href="https://instituto-helper.netlify.app/">
                 <img className="rounded-md" alt="project" src={instipoa} />
               </a>
             </div>
             <div className="pb-8 px-4">
+              <p className="text-xl text-gray-700 font-semibold text-center m-4">
+                O Instituto admin foi desenvolvido para administrar as aulas do
+                Instipoa.
+              </p>
               <a href="https://github.com/KeysiJones/instituto-admin">
                 <img
                   className="rounded-md"

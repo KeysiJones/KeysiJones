@@ -4,6 +4,35 @@
 
 html {
   scroll-behavior: smooth;
+  transition: all 1s ease-out;
+  animation-name: sets_opacity;
+  animation-duration: 1s;
+}
+
+@keyframes from_left_to_right {
+  0% {
+    left: -500px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes sets_opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
+
+img#thug {
+  -webkit-animation: cubic-bezier(0.22, 0.61, 0.36, 1);
+  animation-name: from_left_to_right;
+  animation-duration: 1.3s;
 }
 
 body {
