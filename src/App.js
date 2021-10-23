@@ -38,9 +38,9 @@ function App() {
             />
           </div>
           <div className="blink">
-            <p className="text-gray-600 font-semibold pt-4 text-center text-3xl">
+            <h1 className="text-gray-600 font-semibold pt-4 text-center text-3xl">
               Keysi Jones
-            </p>
+            </h1>
             <p className="text-gray-600 text-center text-2xl">
               Desenvolvedor Web
             </p>
@@ -53,7 +53,7 @@ function App() {
               onClick={() => window.location.replace("#meus-projetos")}
               className="p-4 m-4 bg-red-400 text-white rounded-xl"
             >
-              <p className="font-bold">Meus projetos</p>
+              <h2 className="font-bold">Meus projetos</h2>
             </button>
             <button
               onClick={openWhatsApp}
@@ -63,37 +63,37 @@ function App() {
             </button>
           </div>
           <div id="meus-projetos">
-            <p
+            <h2
               // style={{ textShadow: "#f3b80c -2px 4px 0px" }}
               className="text-gray-600 font-bold py-4 text-center text-3xl"
             >
               Projetos desenvolvidos
-            </p>
+            </h2>
           </div>
           <div className="m-4">
             <div className="pb-8 px-4">
-              <p className="text-2xl text-gray-700 text-center mx-2 mb-8">
+              <h3 className="text-2xl text-gray-700 text-center mx-2 mb-8">
                 JC Carretos é um projeto que desenvolvi para divulgar os
                 serviços de frete que meu pai realiza.
-              </p>
+              </h3>
               <a href="https://jccarretos.vercel.app/">
                 <img className="rounded-md" alt="project" src={jccarretos} />
               </a>
             </div>
             <div className="pb-8 px-4">
-              <p className="text-2xl text-gray-700 text-center mx-2 mb-8">
+              <h3 className="text-2xl text-gray-700 text-center mx-2 mb-8">
                 O Instipoa é um app feito para acessar as aulas do Instituto
                 Porto Alegre.
-              </p>
+              </h3>
               <a href="https://instituto-helper.netlify.app/">
                 <img className="rounded-md" alt="project" src={instipoa} />
               </a>
             </div>
             <div className="pb-8 px-4">
-              <p className="text-2xl text-gray-700 text-center mx-2 mb-8">
+              <h3 className="text-2xl text-gray-700 text-center mx-2 mb-8">
                 O Instituto admin foi desenvolvido para administrar as aulas do
                 Instipoa.
-              </p>
+              </h3>
               <a href="https://github.com/KeysiJones/instituto-admin">
                 <img
                   className="rounded-md"
