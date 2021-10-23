@@ -38,11 +38,11 @@ function App() {
             />
           </div>
           <div className="blink">
-            <p
-              // style={{ textShadow: "#f3b80c -2px 4px 0px" }}
-              className="text-gray-600 font-bold pt-4 text-center text-3xl"
-            >
-              Meu nome é Jones... <br /> Keysi Jones !
+            <p className="text-gray-600 font-semibold pt-4 text-center text-3xl">
+              Keysi Jones
+            </p>
+            <p className="text-gray-600 text-center text-2xl">
+              Desenvolvedor Web
             </p>
           </div>
           <div
@@ -72,7 +72,7 @@ function App() {
           </div>
           <div className="m-4">
             <div className="pb-8 px-4">
-              <p className="text-2xl text-gray-700 font-semibold text-center m-4">
+              <p className="text-2xl text-gray-700 text-center mx-2 mb-8">
                 JC Carretos é um projeto que desenvolvi para divulgar os
                 serviços de frete que meu pai realiza.
               </p>
@@ -81,7 +81,7 @@ function App() {
               </a>
             </div>
             <div className="pb-8 px-4">
-              <p className="text-2xl text-gray-700 font-semibold text-center m-4">
+              <p className="text-2xl text-gray-700 text-center mx-2 mb-8">
                 O Instipoa é um app feito para acessar as aulas do Instituto
                 Porto Alegre.
               </p>
@@ -90,7 +90,7 @@ function App() {
               </a>
             </div>
             <div className="pb-8 px-4">
-              <p className="text-2xl text-gray-700 font-semibold text-center m-4">
+              <p className="text-2xl text-gray-700 text-center mx-2 mb-8">
                 O Instituto admin foi desenvolvido para administrar as aulas do
                 Instipoa.
               </p>
