@@ -64,14 +64,14 @@ function App() {
           <div id="meus-projetos">
             <p
               style={{ textShadow: "#f3b80c -2px 4px 0px" }}
-              className="text-gray-600 font-bold py-4 text-center text-2xl"
+              className="text-gray-600 font-bold py-4 text-center text-3xl"
             >
               Projetos desenvolvidos
             </p>
           </div>
           <div className="m-4">
             <div className="pb-8 px-4">
-              <p className="text-xl text-gray-700 font-semibold text-center m-4">
+              <p className="text-2xl text-gray-700 font-semibold text-center m-4">
                 JC Carretos é um projeto que desenvolvi para divulgar os
                 serviços de frete que meu pai realiza.
               </p>
@@ -80,7 +80,7 @@ function App() {
               </a>
             </div>
             <div className="pb-8 px-4">
-              <p className="text-xl text-gray-700 font-semibold text-center m-4">
+              <p className="text-2xl text-gray-700 font-semibold text-center m-4">
                 O Instipoa é um app feito para acessar as aulas do Instituto
                 Porto Alegre.
               </p>
@@ -89,7 +89,7 @@ function App() {
               </a>
             </div>
             <div className="pb-8 px-4">
-              <p className="text-xl text-gray-700 font-semibold text-center m-4">
+              <p className="text-2xl text-gray-700 font-semibold text-center m-4">
                 O Instituto admin foi desenvolvido para administrar as aulas do
                 Instipoa.
               </p>
