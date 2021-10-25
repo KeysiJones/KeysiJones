@@ -10,7 +10,7 @@ import keysiPhoto from "./fotos/keysi-contorno.png";
 import institutoAdmin from "./fotos/instituto-admin.png";
 import instipoa from "./fotos/instipoa.png";
 import jccarretos from "./fotos/jccarretos.png";
-import thug from "./fotos/keysired.png";
+import thug from "./fotos/keysiredglasses.png";
 // import thug from "./fotos/thug.png";
 
 // library.add(fab, faLinkedin, faCheckSquare, faCoffee);
