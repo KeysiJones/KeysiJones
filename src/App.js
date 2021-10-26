@@ -6,11 +6,10 @@ import "./App.css";
 // import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
 // import axios from "axios";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import keysiPhoto from "./fotos/keysi-contorno.png";
 import institutoAdmin from "./fotos/instituto-admin.png";
 import instipoa from "./fotos/instipoa.png";
 import jccarretos from "./fotos/jccarretos.png";
-import thug from "./fotos/keysiredglasses.png";
+import thug from "./fotos/keysivermelho.png";
 // import thug from "./fotos/thug.png";
 
 // library.add(fab, faLinkedin, faCheckSquare, faCoffee);
@@ -21,28 +20,19 @@ function App() {
     <div className="bg-white h-screen">
       <div className="bg-white p-2">
         <div className="blink">
-          <div>
+          <div className="flex flex-col gap-1">
             <img
               id="thug"
               style={{ transform: "scale(1.0)" }}
-              className="m-auto absolute left-0 right-0 mt-4"
+              className="m-auto left-0 right-0 mt-2"
               alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
               src={thug}
             />
-            <img
-              id="regular"
-              style={{ transform: "scale(1.0)", opacity: 0 }}
-              className="m-auto rounded-full left-0 right-0 opacity-0"
-              alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
-              src={keysiPhoto}
-            />
-          </div>
-          <div className="blink">
-            <h1 className="text-gray-600 font-semibold pt-4 text-center text-3xl">
-              Keysi Jones
+            <h1 className="text-gray-700 font-semibold text-center text-3xl mx-8">
+              Keysi Jones R. Fernandes
             </h1>
-            <p className="text-gray-600 text-center text-2xl">
-              Desenvolvedor Web
+            <p className="text-gray-500 text-center font-semibold text-xl mx-8">
+              Web Developer
             </p>
           </div>
           <div
@@ -50,16 +40,10 @@ function App() {
             className="flex m-4 flex-col text-center justify-center 1s"
           >
             <button
-              onClick={() => window.location.replace("#meus-projetos")}
-              className="p-4 m-4 bg-red-400 text-white rounded-xl"
-            >
-              <h2 className="font-bold">Meus projetos</h2>
-            </button>
-            <button
               onClick={openWhatsApp}
               className="p-4 m-4 bg-red-400 text-white rounded-xl"
             >
-              <p className="font-bold">Fale comigo</p>
+              <p className="font-bold">Contact me</p>
             </button>
           </div>
           <div id="meus-projetos">
@@ -67,32 +51,32 @@ function App() {
               // style={{ textShadow: "#f3b80c -2px 4px 0px" }}
               className="text-gray-600 font-bold py-4 text-center text-3xl"
             >
-              Projetos desenvolvidos
+              My projects
             </h2>
           </div>
           <div className="m-4">
             <div className="pb-8 px-4">
-              <h3 className="text-2xl text-gray-700 text-center mx-2 mb-8">
-                JC Carretos é um projeto que desenvolvi para divulgar os
-                serviços de frete que meu pai realiza.
+              <h3 className="text-2xl text-gray-600 text-center mx-2 mb-8">
+                JC Carretos is a website made to spread my father's freight
+                services.
               </h3>
               <a href="https://jccarretos.vercel.app/">
                 <img className="rounded-md" alt="project" src={jccarretos} />
               </a>
             </div>
             <div className="pb-8 px-4">
-              <h3 className="text-2xl text-gray-700 text-center mx-2 mb-8">
-                O Instipoa é um app feito para acessar as aulas do Instituto
-                Porto Alegre.
+              <h3 className="text-2xl text-gray-600 text-center mx-2 mb-8">
+                Instipoa is an web app made to make the access to our Institute
+                classes easy.
               </h3>
               <a href="https://instituto-helper.netlify.app/">
                 <img className="rounded-md" alt="project" src={instipoa} />
               </a>
             </div>
             <div className="pb-8 px-4">
-              <h3 className="text-2xl text-gray-700 text-center mx-2 mb-8">
-                O Instituto admin foi desenvolvido para administrar as aulas do
-                Instipoa.
+              <h3 className="text-2xl text-gray-600 text-center mx-2 mb-8">
+                Instituto admin was developed to administrate Instipoa's
+                classes.
               </h3>
               <a href="https://github.com/KeysiJones/instituto-admin">
                 <img
