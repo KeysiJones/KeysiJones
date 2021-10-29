@@ -85,7 +85,7 @@ function App() {
           <div className="m-4">
             <div
               className={`mb-8 ${
-                darkMode ? "bg-white" : "p-2 bg-gray-200 "
+                darkMode ? "bg-white" : "bg-gray-200 border-gray-200 border-2"
               } rounded-b-xl rounded-t-xl`}
             >
               <a href="https://jccarretos.vercel.app/">
@@ -102,7 +102,7 @@ function App() {
             </div>
             <div
               className={`mb-8 ${
-                darkMode ? "bg-white" : "p-2 bg-gray-200 "
+                darkMode ? "bg-white" : " bg-gray-200 "
               } rounded-b-xl rounded-t-xl`}
             >
               <a href="https://instituto-helper.netlify.app/">
@@ -119,7 +119,7 @@ function App() {
             </div>
             <div
               className={`mb-8 ${
-                darkMode ? "bg-white" : "p-2 bg-gray-200 "
+                darkMode ? "bg-white" : "bg-gray-200 border-gray-200 border-2"
               } rounded-b-xl rounded-t-xl`}
             >
               <a href="https://github.com/KeysiJones/instituto-admin">
@@ -131,7 +131,7 @@ function App() {
               </a>
               <h3
                 className={`text-2xl ${
-                  darkMode ? "text-gray-600" : "text-gray-700"
+                  darkMode ? "text-gray-600" : "text-gray-700 "
                 } text-center pb-4 m-2 font-semibold`}
               >
                 Instituto admin was developed to administrate Instipoa's
