@@ -9,6 +9,22 @@ html {
   animation-duration: 1s;
 }
 
+root {
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  transition: all 2s ease-out;
+}
+button {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+/* button#lightbulb {
+  @apply bg-gray-500;
+} */
+
 @keyframes from_left_to_right {
   0% {
     left: -500px;
