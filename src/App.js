@@ -1,8 +1,7 @@
 import "./App.css";
 // import { fab, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
+// import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
 // import axios from "axios";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import institutoAdmin from "./fotos/instituto-admin.png";
 import instipoa from "./fotos/instipoa.png";
 import jccarretos from "./fotos/jccarretos.png";
