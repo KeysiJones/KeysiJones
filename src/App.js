@@ -1,6 +1,6 @@
 import "./App.css";
 // import { fab, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
 // import axios from "axios";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import institutoAdmin from "./fotos/instituto-admin.png";
@@ -8,7 +8,8 @@ import instipoa from "./fotos/instipoa.png";
 import jccarretos from "./fotos/jccarretos.png";
 import thug from "./fotos/keysiredglasses.png";
 import { useState } from "react";
-import thugBlack from "./fotos/keysidarkglasses.png";
+import Switch from "react-switch";
+import thugBlack from "./fotos/keysibordered.png";
 
 // library.add(fab, faLinkedin, faCheckSquare, faCoffee);
 const openWhatsApp = () =>
@@ -22,6 +23,21 @@ function App() {
     <div className={`${darkMode ? "bg-gray-700" : "bg-white"} h-screen`}>
       <div className={`${darkMode ? "bg-gray-700" : "bg-white"} p-2`}>
         <div className="blink">
+          <div className="flex flex-row">
+            <label className="text-right m-auto">
+              <Switch
+                onChange={() => {
+                  darkMode
+                    ? localStorage.setItem("theme", "normal")
+                    : localStorage.setItem("theme", "dark");
+                  setDarkMode(!darkMode);
+                }}
+                checked={darkMode}
+                // onHandleColor="#374151"
+                onColor="#1f2937"
+              />
+            </label>
+          </div>
           <div className="flex flex-col gap-1">
             <img
               id="thug"
@@ -29,22 +45,6 @@ function App() {
               alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
               src={darkMode ? thugBlack : thug}
             />
-            <button
-              id="lightbulb"
-              onClick={() => {
-                darkMode
-                  ? localStorage.setItem("theme", "normal")
-                  : localStorage.setItem("theme", "dark");
-                setDarkMode(!darkMode);
-              }}
-              className={`w-12 rounded-full font-semibold text-center text-3xl mx-8 self-center p-2 outline-none select-none mb-2`}
-            >
-              <FontAwesomeIcon
-                icon={faLightbulb}
-                color={!darkMode ? "gold" : "white"}
-                size={"2x"}
-              />
-            </button>
             <h1
               className={`${
                 darkMode ? "text-white" : "text-gray-700"
@@ -67,7 +67,7 @@ function App() {
             <button
               onClick={openWhatsApp}
               className={`p-4 m-4 ${
-                darkMode ? "bg-gray-500" : "bg-red-400"
+                darkMode ? "bg-gray-800" : "bg-red-400"
               } text-white rounded-xl`}
             >
               <p className="font-bold text-3xl">Contact me</p>
