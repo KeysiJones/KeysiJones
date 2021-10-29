@@ -84,8 +84,8 @@ function App() {
           </div>
           <div className="m-4">
             <div
-              className={`mb-8 bg-gray-300 ${
-                darkMode ? "" : "p-2"
+              className={`mb-8 ${
+                darkMode ? "bg-white" : "p-2 bg-gray-300 "
               } rounded-b-xl rounded-t-xl`}
             >
               <a href="https://jccarretos.vercel.app/">
@@ -97,8 +97,8 @@ function App() {
               </h3>
             </div>
             <div
-              className={`mb-8 bg-gray-300 ${
-                darkMode ? "" : "p-2"
+              className={`mb-8 ${
+                darkMode ? "bg-white" : "p-2 bg-gray-300 "
               } rounded-b-xl rounded-t-xl`}
             >
               <a href="https://instituto-helper.netlify.app/">
@@ -110,8 +110,8 @@ function App() {
               </h3>
             </div>
             <div
-              className={`mb-8 bg-gray-300 ${
-                darkMode ? "" : "p-2"
+              className={`mb-8 ${
+                darkMode ? "bg-white" : "p-2 bg-gray-300 "
               } rounded-b-xl rounded-t-xl`}
             >
               <a href="https://github.com/KeysiJones/instituto-admin">
