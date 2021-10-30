@@ -27,11 +27,11 @@ button {
 
 @keyframes from_left_to_right {
   0% {
-    left: -500px;
+    transform: scale(0.5);
   }
 
   100% {
-    left: 0px;
+    transform: scale(1);
   }
 }
 
@@ -97,6 +97,14 @@ code {
   }
 }
 
+@media (min-width: 1200px) {
+  div#meus-projetos {
+    display: flex;
+    gap: 34px;
+    @apply my-8 mx-32;
+  }
+}
+
 @media (max-width: 758px) {
   div.splide {
     @apply mx-auto mt-8;
@@ -105,6 +113,10 @@ code {
 
   div#meus-projetos {
     display: none;
+  }
+
+  div#aboutme div#myinfo {
+    @apply mt-4 flex flex-col gap-2;
   }
 }
 

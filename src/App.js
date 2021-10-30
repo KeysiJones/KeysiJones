@@ -45,7 +45,7 @@ function App() {
           <div className="flex flex-col gap-1" id="aboutme">
             <img
               id="thug"
-              className="m-auto left-0 right-0 mt-2 -mb-8"
+              className="m-auto mt-2 -mb-8"
               alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
               src={darkMode ? thugBlack : thug}
             />
@@ -66,7 +66,7 @@ function App() {
               </p>
               <div
                 id="main-buttons"
-                className="flex m-4 flex-col text-center justify-center 1s"
+                className="flex mx-4 mt-8 flex-col text-center justify-center 1s"
               >
                 <button
                   onClick={openWhatsApp}
@@ -82,7 +82,7 @@ function App() {
           <h2
             className={`${
               darkMode ? "text-white" : "text-gray-600"
-            } font-bold py-4 text-center text-3xl`}
+            } font-bold py-4 text-center text-4xl`}
           >
             My projects
           </h2>
@@ -166,7 +166,7 @@ function App() {
               </ul>
             </div>
           </div>
-          <div id="meus-projetos" className="m-4">
+          <div id="meus-projetos" className="mx-4 my-8">
             <div
               className={`mb-8 ${
                 darkMode ? "bg-white" : "bg-gray-200 border-gray-200 border-2"
