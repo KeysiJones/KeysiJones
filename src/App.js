@@ -116,6 +116,20 @@ function App() {
                       JC Carretos is a website made to spread my father's
                       freight services.
                     </h3>
+                    <div className="text-center">
+                      <button
+                        onClick={() =>
+                          openLink(
+                            "https://github.com/KeysiJones/instituto-admin"
+                          )
+                        }
+                        className={`p-4 m-auto ${
+                          darkMode ? "bg-gray-800" : "bg-red-400"
+                        } text-white rounded-b-xl w-full`}
+                      >
+                        <p className="font-bold text-3xl">Visitar</p>
+                      </button>
+                    </div>
                   </div>
                 </li>
                 <li className="splide__slide">
@@ -139,6 +153,20 @@ function App() {
                       Instipoa is an web app made to make the access to our
                       Institute classes easy.
                     </h3>
+                    <div className="text-center">
+                      <button
+                        onClick={() =>
+                          openLink(
+                            "https://github.com/KeysiJones/instituto-admin"
+                          )
+                        }
+                        className={`p-4 m-auto ${
+                          darkMode ? "bg-gray-800" : "bg-red-400"
+                        } text-white rounded-b-xl w-full`}
+                      >
+                        <p className="font-bold text-3xl">Visitar</p>
+                      </button>
+                    </div>
                   </div>
                 </li>
                 <li className="splide__slide">
@@ -164,6 +192,20 @@ function App() {
                       Instituto admin was developed to administrate Instipoa's
                       classes.
                     </h3>
+                    <div className="text-center">
+                      <button
+                        onClick={() =>
+                          openLink(
+                            "https://github.com/KeysiJones/instituto-admin"
+                          )
+                        }
+                        className={`p-4 m-auto ${
+                          darkMode ? "bg-gray-800" : "bg-red-400"
+                        } text-white rounded-b-xl w-full`}
+                      >
+                        <p className="font-bold text-3xl">Visitar</p>
+                      </button>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -188,10 +230,12 @@ function App() {
               </h3>
               <div className="text-center">
                 <button
-                  onClick={() => openLink("https://jccarretos.vercel.app/")}
-                  className={`p-4 m-4 ${
+                  onClick={() =>
+                    openLink("https://github.com/KeysiJones/instituto-admin")
+                  }
+                  className={`p-4 m-auto ${
                     darkMode ? "bg-gray-800" : "bg-red-400"
-                  } text-white rounded-xl`}
+                  } text-white rounded-b-xl w-full`}
                 >
                   <p className="font-bold text-3xl">Visitar</p>
                 </button>
@@ -216,11 +260,11 @@ function App() {
               <div className="text-center">
                 <button
                   onClick={() =>
-                    openLink("https://instituto-helper.netlify.app/")
+                    openLink("https://github.com/KeysiJones/instituto-admin")
                   }
-                  className={`p-4 m-4 ${
+                  className={`p-4 m-auto ${
                     darkMode ? "bg-gray-800" : "bg-red-400"
-                  } text-white rounded-xl`}
+                  } text-white rounded-b-xl w-full`}
                 >
                   <p className="font-bold text-3xl">Visitar</p>
                 </button>
@@ -251,9 +295,9 @@ function App() {
                   onClick={() =>
                     openLink("https://github.com/KeysiJones/instituto-admin")
                   }
-                  className={`p-4 m-4 ${
+                  className={`p-4 m-auto ${
                     darkMode ? "bg-gray-800" : "bg-red-400"
-                  } text-white rounded-xl`}
+                  } text-white rounded-b-xl w-full`}
                 >
                   <p className="font-bold text-3xl">Visitar</p>
                 </button>
