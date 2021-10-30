@@ -64,3 +64,54 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@media (min-width: 759px) and (max-width: 1920px) {
+  div#aboutme {
+    display: flex;
+    flex-direction: row;
+  }
+
+  div#aboutme div#myinfo {
+    @apply my-auto -ml-32 mr-auto;
+  }
+
+  div#aboutme div#myinfo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div#meus-projetos {
+    display: flex;
+    gap: 34px;
+    @apply my-auto mx-8;
+  }
+
+  div.splide {
+    display: none;
+  }
+}
+
+@media (min-width: 759px) and (max-width: 1200px) {
+  div#aboutme img#thug {
+    width: 500px;
+  }
+}
+
+@media (max-width: 758px) {
+  div.splide {
+    @apply mx-auto mt-8;
+    width: 90%;
+  }
+
+  div#meus-projetos {
+    display: none;
+  }
+}
+
+/* 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV 
+*/

@@ -6,14 +6,20 @@ import institutoAdmin from "./fotos/instituto-admin.png";
 import instipoa from "./fotos/instipoa.png";
 import jccarretos from "./fotos/jccarretos.png";
 import thug from "./fotos/keysiredglasses.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Switch from "react-switch";
+import Splide from "@splidejs/splide";
+import "@splidejs/splide/dist/css/splide.min.css";
 import thugBlack from "./fotos/keysibordered.png";
 
 // library.add(fab, faLinkedin, faCheckSquare, faCoffee);
 const openWhatsApp = () =>
   window.location.replace("https://wa.me/5551993667706?text=Oi Keysi Jones =D");
 function App() {
+  useEffect(() => {
+    new Splide(".splide").mount();
+  }, []);
+
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem("theme") === "dark"
   );
@@ -22,7 +28,7 @@ function App() {
     <div className={`${darkMode ? "bg-gray-700" : "bg-white"} h-screen`}>
       <div className={`${darkMode ? "bg-gray-700" : "bg-white"} p-2`}>
         <div className="blink">
-          <div className="flex flex-row">
+          <div className="ml-8">
             <label className="text-right m-auto">
               <Switch
                 onChange={() => {
@@ -32,56 +38,135 @@ function App() {
                   setDarkMode(!darkMode);
                 }}
                 checked={darkMode}
-                // onHandleColor="#374151"
                 onColor="#1f2937"
               />
             </label>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1" id="aboutme">
             <img
               id="thug"
               className="m-auto left-0 right-0 mt-2 -mb-8"
               alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
               src={darkMode ? thugBlack : thug}
             />
-            <h1
-              className={`${
-                darkMode ? "text-white" : "text-gray-700"
-              } font-semibold text-center text-3xl mx-8`}
-            >
-              Keysi Jones R. Fernandes
-            </h1>
-            <p
-              className={`${
-                darkMode ? "text-gray-400" : "text-gray-500"
-              } text-center font-semibold text-xl mx-8`}
-            >
-              Frontend Web Developer
-            </p>
+            <div id="myinfo">
+              <h1
+                className={`${
+                  darkMode ? "text-white" : "text-gray-700"
+                } font-semibold text-center text-3xl mx-8`}
+              >
+                Keysi Jones R. Fernandes
+              </h1>
+              <p
+                className={`${
+                  darkMode ? "text-gray-400" : "text-gray-500"
+                } text-center font-semibold text-xl mx-8`}
+              >
+                Frontend Web Developer
+              </p>
+              <div
+                id="main-buttons"
+                className="flex m-4 flex-col text-center justify-center 1s"
+              >
+                <button
+                  onClick={openWhatsApp}
+                  className={`p-4 m-4 ${
+                    darkMode ? "bg-gray-800" : "bg-red-400"
+                  } text-white rounded-xl`}
+                >
+                  <p className="font-bold text-3xl">Contact me</p>
+                </button>
+              </div>
+            </div>
           </div>
-          <div
-            id="main-buttons"
-            className="flex m-4 flex-col text-center justify-center 1s"
+          <h2
+            className={`${
+              darkMode ? "text-white" : "text-gray-600"
+            } font-bold py-4 text-center text-3xl`}
           >
-            <button
-              onClick={openWhatsApp}
-              className={`p-4 m-4 ${
-                darkMode ? "bg-gray-800" : "bg-red-400"
-              } text-white rounded-xl`}
-            >
-              <p className="font-bold text-3xl">Contact me</p>
-            </button>
+            My projects
+          </h2>
+
+          <div className="splide">
+            <div className="splide__track">
+              <ul className="splide__list">
+                <li className="splide__slide">
+                  <div
+                    className={`mb-8 ${
+                      darkMode
+                        ? "bg-white"
+                        : "bg-gray-200 border-gray-200 border-2"
+                    } rounded-b-xl rounded-t-xl`}
+                  >
+                    <a href="https://jccarretos.vercel.app/">
+                      <img
+                        className="rounded-t-xl"
+                        alt="project"
+                        src={jccarretos}
+                      />
+                    </a>
+                    <h3
+                      className={`text-2xl ${
+                        darkMode ? "text-gray-600" : "text-gray-700"
+                      } text-center pb-4 m-2 font-semibold`}
+                    >
+                      JC Carretos is a website made to spread my father's
+                      freight services.
+                    </h3>
+                  </div>
+                </li>
+                <li className="splide__slide">
+                  <div
+                    className={`mb-8 ${
+                      darkMode ? "bg-white" : " bg-gray-200 "
+                    } rounded-b-xl rounded-t-xl`}
+                  >
+                    <a href="https://instituto-helper.netlify.app/">
+                      <img
+                        className="rounded-t-xl"
+                        alt="project"
+                        src={instipoa}
+                      />
+                    </a>
+                    <h3
+                      className={`text-2xl ${
+                        darkMode ? "text-gray-600" : "text-gray-700"
+                      } text-center pb-4 m-2 font-semibold`}
+                    >
+                      Instipoa is an web app made to make the access to our
+                      Institute classes easy.
+                    </h3>
+                  </div>
+                </li>
+                <li className="splide__slide">
+                  <div
+                    className={`mb-8 ${
+                      darkMode
+                        ? "bg-white"
+                        : "bg-gray-200 border-gray-200 border-2"
+                    } rounded-b-xl rounded-t-xl`}
+                  >
+                    <a href="https://github.com/KeysiJones/instituto-admin">
+                      <img
+                        className="rounded-t-xl"
+                        alt="project"
+                        src={institutoAdmin}
+                      />
+                    </a>
+                    <h3
+                      className={`text-2xl ${
+                        darkMode ? "text-gray-600" : "text-gray-700 "
+                      } text-center pb-4 m-2 font-semibold`}
+                    >
+                      Instituto admin was developed to administrate Instipoa's
+                      classes.
+                    </h3>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div id="meus-projetos">
-            <h2
-              className={`${
-                darkMode ? "text-white" : "text-gray-600"
-              } font-bold py-4 text-center text-3xl`}
-            >
-              My projects
-            </h2>
-          </div>
-          <div className="m-4">
+          <div id="meus-projetos" className="m-4">
             <div
               className={`mb-8 ${
                 darkMode ? "bg-white" : "bg-gray-200 border-gray-200 border-2"
