@@ -9,13 +9,17 @@ html {
   animation-duration: 1s;
 }
 
-root {
+div {
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
-  transition: all 2s ease-out;
 }
+
+div#root {
+  min-width: 320px;
+}
+
 button {
   -webkit-tap-highlight-color: transparent;
   outline: none;
@@ -84,6 +88,15 @@ code {
     display: flex;
     gap: 34px;
     @apply my-auto mx-8;
+  }
+
+  div#meus-projetos > div.project-item {
+    @apply flex flex-col justify-between;
+  }
+
+  div#meus-projetos > div.project-item:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in;
   }
 
   div.splide {

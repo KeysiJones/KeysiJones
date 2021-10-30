@@ -13,8 +13,7 @@ import "@splidejs/splide/dist/css/splide.min.css";
 import thugBlack from "./fotos/keysibordered.png";
 
 // library.add(fab, faLinkedin, faCheckSquare, faCoffee);
-const openWhatsApp = () =>
-  window.location.replace("https://wa.me/5551993667706?text=Oi Keysi Jones =D");
+const openLink = (url) => window.open(url, "_blank");
 function App() {
   useEffect(() => {
     new Splide(".splide").mount();
@@ -69,7 +68,11 @@ function App() {
                 className="flex mx-4 mt-8 flex-col text-center justify-center 1s"
               >
                 <button
-                  onClick={openWhatsApp}
+                  onClick={() =>
+                    openLink(
+                      "https://wa.me/5551993667706?text=Oi Keysi Jones =D"
+                    )
+                  }
                   className={`p-4 m-4 ${
                     darkMode ? "bg-gray-800" : "bg-red-400"
                   } text-white rounded-xl`}
@@ -170,7 +173,7 @@ function App() {
             <div
               className={`mb-8 ${
                 darkMode ? "bg-white" : "bg-gray-200 border-gray-200 border-2"
-              } rounded-b-xl rounded-t-xl`}
+              } rounded-b-xl rounded-t-xl project-item`}
             >
               <a href="https://jccarretos.vercel.app/">
                 <img className="rounded-t-xl" alt="project" src={jccarretos} />
@@ -183,11 +186,21 @@ function App() {
                 JC Carretos is a website made to spread my father's freight
                 services.
               </h3>
+              <div className="text-center">
+                <button
+                  onClick={() => openLink("https://jccarretos.vercel.app/")}
+                  className={`p-4 m-4 ${
+                    darkMode ? "bg-gray-800" : "bg-red-400"
+                  } text-white rounded-xl`}
+                >
+                  <p className="font-bold text-3xl">Visitar</p>
+                </button>
+              </div>
             </div>
             <div
               className={`mb-8 ${
                 darkMode ? "bg-white" : " bg-gray-200 "
-              } rounded-b-xl rounded-t-xl`}
+              } rounded-b-xl rounded-t-xl project-item`}
             >
               <a href="https://instituto-helper.netlify.app/">
                 <img className="rounded-t-xl" alt="project" src={instipoa} />
@@ -200,11 +213,23 @@ function App() {
                 Instipoa is an web app made to make the access to our Institute
                 classes easy.
               </h3>
+              <div className="text-center">
+                <button
+                  onClick={() =>
+                    openLink("https://instituto-helper.netlify.app/")
+                  }
+                  className={`p-4 m-4 ${
+                    darkMode ? "bg-gray-800" : "bg-red-400"
+                  } text-white rounded-xl`}
+                >
+                  <p className="font-bold text-3xl">Visitar</p>
+                </button>
+              </div>
             </div>
             <div
               className={`mb-8 ${
                 darkMode ? "bg-white" : "bg-gray-200 border-gray-200 border-2"
-              } rounded-b-xl rounded-t-xl`}
+              } rounded-b-xl rounded-t-xl project-item`}
             >
               <a href="https://github.com/KeysiJones/instituto-admin">
                 <img
@@ -221,6 +246,18 @@ function App() {
                 Instituto admin was developed to administrate Instipoa's
                 classes.
               </h3>
+              <div className="text-center">
+                <button
+                  onClick={() =>
+                    openLink("https://github.com/KeysiJones/instituto-admin")
+                  }
+                  className={`p-4 m-4 ${
+                    darkMode ? "bg-gray-800" : "bg-red-400"
+                  } text-white rounded-xl`}
+                >
+                  <p className="font-bold text-3xl">Visitar</p>
+                </button>
+              </div>
             </div>
           </div>
         </div>
