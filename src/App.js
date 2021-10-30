@@ -1,5 +1,9 @@
 import "./App.css";
-// import { fab, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faLinkedin,
+  faFacebook,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 // import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
 // import axios from "axios";
 import institutoAdmin from "./fotos/instituto-admin.png";
@@ -11,6 +15,7 @@ import Switch from "react-switch";
 import Splide from "@splidejs/splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import thugBlack from "./fotos/keysibordered.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 // library.add(fab, faLinkedin, faCheckSquare, faCoffee);
 const openLink = (url) => window.open(url, "_blank");
@@ -67,18 +72,31 @@ function App() {
                 id="main-buttons"
                 className="flex mx-4 mt-8 flex-col text-center justify-center 1s"
               >
-                <button
-                  onClick={() =>
-                    openLink(
-                      "https://wa.me/5551993667706?text=Oi Keysi Jones =D"
-                    )
-                  }
+                <div
                   className={`p-4 m-4 ${
                     darkMode ? "bg-gray-800" : "bg-red-400"
-                  } text-white rounded-xl`}
+                  } text-white rounded-xl font-bold text-5xl flex justify-around`}
                 >
-                  <p className="font-bold text-3xl">Contact me</p>
-                </button>
+                  <button
+                    onClick={() =>
+                      openLink("https://www.linkedin.com/in/keysijones/")
+                    }
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} size="1x" />
+                  </button>
+                  <button
+                    onClick={() =>
+                      openLink("https://www.facebook.com/keysijones01/")
+                    }
+                  >
+                    <FontAwesomeIcon icon={faFacebook} size="1x" />
+                  </button>
+                  <button
+                    onClick={() => openLink("https://twitter.com/keysi_jones")}
+                  >
+                    <FontAwesomeIcon icon={faTwitter} size="1x" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -99,7 +117,7 @@ function App() {
                       darkMode
                         ? "bg-white"
                         : "bg-gray-200 border-gray-200 border-2"
-                    } rounded-b-xl rounded-t-xl`}
+                    } rounded-b-xl rounded-t-xl flex flex-col justify-between`}
                     style={{ minHeight: "61.5vh" }}
                   >
                     <a href="https://jccarretos.vercel.app/">
