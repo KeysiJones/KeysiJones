@@ -143,7 +143,7 @@ function App() {
                           darkMode ? "bg-gray-800" : "bg-red-400"
                         } text-white rounded-b-xl w-full`}
                       >
-                        <p className="font-bold text-3xl">Visitar</p>
+                        <p className="font-bold text-3xl">Ver demo</p>
                       </button>
                     </div>
                   </div>
@@ -179,7 +179,7 @@ function App() {
                           darkMode ? "bg-gray-800" : "bg-red-400"
                         } text-white rounded-b-xl w-full`}
                       >
-                        <p className="font-bold text-3xl">Visitar</p>
+                        <p className="font-bold text-3xl">Ver demo</p>
                       </button>
                     </div>
                   </div>
@@ -219,7 +219,7 @@ function App() {
                           darkMode ? "bg-gray-800" : "bg-red-400"
                         } text-white rounded-b-xl w-full`}
                       >
-                        <p className="font-bold text-3xl">Visitar</p>
+                        <p className="font-bold text-3xl">Ver demo</p>
                       </button>
                     </div>
                   </div>
@@ -253,7 +253,7 @@ function App() {
                     darkMode ? "bg-gray-800" : "bg-red-400"
                   } text-white rounded-b-xl w-full`}
                 >
-                  <p className="font-bold text-3xl">Visitar</p>
+                  <p className="font-bold text-3xl">Ver demo</p>
                 </button>
               </div>
             </div>
@@ -282,7 +282,7 @@ function App() {
                     darkMode ? "bg-gray-800" : "bg-red-400"
                   } text-white rounded-b-xl w-full`}
                 >
-                  <p className="font-bold text-3xl">Visitar</p>
+                  <p className="font-bold text-3xl">Ver demo</p>
                 </button>
               </div>
             </div>
@@ -315,7 +315,7 @@ function App() {
                     darkMode ? "bg-gray-800" : "bg-red-400"
                   } text-white rounded-b-xl w-full`}
                 >
-                  <p className="font-bold text-3xl">Visitar</p>
+                  <p className="font-bold text-3xl">Ver demo</p>
                 </button>
               </div>
             </div>
