@@ -3,6 +3,7 @@ import {
   faLinkedin,
   faFacebook,
   faTwitter,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 // import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
 // import axios from "axios";
@@ -85,11 +86,9 @@ function App() {
                     <FontAwesomeIcon icon={faLinkedin} size="1x" />
                   </button>
                   <button
-                    onClick={() =>
-                      openLink("https://www.facebook.com/keysijones01/")
-                    }
+                    onClick={() => openLink("https://github.com/KeysiJones")}
                   >
-                    <FontAwesomeIcon icon={faFacebook} size="1x" />
+                    <FontAwesomeIcon icon={faGithub} size="1x" />
                   </button>
                   <button
                     onClick={() => openLink("https://twitter.com/keysi_jones")}
@@ -138,9 +137,7 @@ function App() {
                     <div className="text-center">
                       <button
                         onClick={() =>
-                          openLink(
-                            "https://github.com/KeysiJones/instituto-admin"
-                          )
+                          openLink("https://jccarretos.vercel.app/")
                         }
                         className={`p-4 m-auto ${
                           darkMode ? "bg-gray-800" : "bg-red-400"
@@ -176,9 +173,7 @@ function App() {
                     <div className="text-center">
                       <button
                         onClick={() =>
-                          openLink(
-                            "https://github.com/KeysiJones/instituto-admin"
-                          )
+                          openLink("https://instituto-helper.netlify.app/")
                         }
                         className={`p-4 m-auto ${
                           darkMode ? "bg-gray-800" : "bg-red-400"
