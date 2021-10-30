@@ -100,6 +100,7 @@ function App() {
                         ? "bg-white"
                         : "bg-gray-200 border-gray-200 border-2"
                     } rounded-b-xl rounded-t-xl`}
+                    style={{ minHeight: "61.5vh" }}
                   >
                     <a href="https://jccarretos.vercel.app/">
                       <img
@@ -136,7 +137,8 @@ function App() {
                   <div
                     className={`mb-8 ${
                       darkMode ? "bg-white" : " bg-gray-200 "
-                    } rounded-b-xl rounded-t-xl`}
+                    } rounded-b-xl rounded-t-xl flex flex-col justify-between`}
+                    style={{ minHeight: "61.5vh" }}
                   >
                     <a href="https://instituto-helper.netlify.app/">
                       <img
@@ -175,7 +177,8 @@ function App() {
                       darkMode
                         ? "bg-white"
                         : "bg-gray-200 border-gray-200 border-2"
-                    } rounded-b-xl rounded-t-xl`}
+                    } rounded-b-xl rounded-t-xl flex flex-col justify-between`}
+                    style={{ minHeight: "61.5vh" }}
                   >
                     <a href="https://github.com/KeysiJones/instituto-admin">
                       <img
