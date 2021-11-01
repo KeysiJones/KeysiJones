@@ -8,7 +8,7 @@ import {
 import institutoAdmin from "./fotos/instituto-admin.png";
 import instipoa from "./fotos/instipoa.png";
 import jccarretos from "./fotos/jccarretos.png";
-import thug from "./fotos/keysiredsquare.png";
+import thug from "./fotos/keysiredandsquare.png";
 import { useEffect, useState } from "react";
 import Switch from "react-switch";
 import Splide from "@splidejs/splide";
