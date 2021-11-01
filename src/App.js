@@ -27,10 +27,10 @@ function App() {
   );
 
   return (
-    <div className={`${darkMode ? "bg-gray-700" : "bg-white"} h-screen`}>
-      <div className={`${darkMode ? "bg-gray-700" : "bg-white"} p-2`}>
+    <div className={`${darkMode ? "bg-gray-800" : "bg-white"} h-screen`}>
+      <div className={`${darkMode ? "bg-gray-800" : "bg-white"} p-2`}>
         <div className="blink">
-          <div className="flex flex-col gap-1" id="aboutme">
+          <div className="flex flex-col gap-1 rounded-t-3xl" id="aboutme">
             <img
               id="thug"
               className="m-auto mt-2 -mb-8"
@@ -38,7 +38,7 @@ function App() {
               src={darkMode ? thugBlack : thug}
             />
 
-            <div id="myinfo">
+            <div id="myinfo" className="rounded-3xl">
               <div className="self-center mb-4">
                 <label className="text-right m-auto text-sm">
                   <Switch
@@ -49,7 +49,7 @@ function App() {
                       setDarkMode(!darkMode);
                     }}
                     checked={darkMode}
-                    onColor="#1F2937"
+                    onColor="#374151"
                     offColor="#F87171"
                     checkedIcon={null}
                     uncheckedIcon={null}
@@ -77,8 +77,8 @@ function App() {
                 className="flex mx-4 mt-8 flex-col text-center justify-center 1s"
               >
                 <div
-                  className={`p-4 m-4 ${
-                    darkMode ? "bg-gray-800" : "bg-red-400"
+                  className={`p-4 ${
+                    darkMode ? "bg-gray-700" : "bg-red-400"
                   } text-white rounded-xl font-bold text-5xl flex justify-around`}
                 >
                   <button
@@ -141,7 +141,7 @@ function App() {
                           openLink("https://jccarretos.vercel.app/")
                         }
                         className={`p-4 m-auto ${
-                          darkMode ? "bg-gray-800" : "bg-red-400"
+                          darkMode ? "bg-gray-700" : "bg-red-400"
                         } text-white rounded-b-xl w-full`}
                       >
                         <p className="font-bold text-3xl">Ver demo</p>
@@ -175,7 +175,7 @@ function App() {
                           openLink("https://instituto-helper.netlify.app/")
                         }
                         className={`p-4 m-auto ${
-                          darkMode ? "bg-gray-800" : "bg-red-400"
+                          darkMode ? "bg-gray-700" : "bg-red-400"
                         } text-white rounded-b-xl w-full`}
                       >
                         <p className="font-bold text-3xl">Ver demo</p>
@@ -213,7 +213,7 @@ function App() {
                           )
                         }
                         className={`p-4 m-auto ${
-                          darkMode ? "bg-gray-800" : "bg-red-400"
+                          darkMode ? "bg-gray-700" : "bg-red-400"
                         } text-white rounded-b-xl w-full`}
                       >
                         <p className="font-bold text-3xl">Ver demo</p>
@@ -245,7 +245,7 @@ function App() {
                     openLink("https://github.com/KeysiJones/instituto-admin")
                   }
                   className={`p-4 m-auto ${
-                    darkMode ? "bg-gray-800" : "bg-red-400"
+                    darkMode ? "bg-gray-700" : "bg-red-400"
                   } text-white rounded-b-xl w-full`}
                 >
                   <p className="font-bold text-3xl">Ver demo</p>
@@ -272,7 +272,7 @@ function App() {
                     openLink("https://github.com/KeysiJones/instituto-admin")
                   }
                   className={`p-4 m-auto ${
-                    darkMode ? "bg-gray-800" : "bg-red-400"
+                    darkMode ? "bg-gray-700" : "bg-red-400"
                   } text-white rounded-b-xl w-full`}
                 >
                   <p className="font-bold text-3xl">Ver demo</p>
@@ -303,7 +303,7 @@ function App() {
                     openLink("https://github.com/KeysiJones/instituto-admin")
                   }
                   className={`p-4 m-auto ${
-                    darkMode ? "bg-gray-800" : "bg-red-400"
+                    darkMode ? "bg-gray-700" : "bg-red-400"
                   } text-white rounded-b-xl w-full`}
                 >
                   <p className="font-bold text-3xl">Ver demo</p>
