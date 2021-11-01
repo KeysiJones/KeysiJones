@@ -5,7 +5,6 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 // import { faLightbulb, faMoon } from "@fortawesome/free-solid-svg-icons";
-// import axios from "axios";
 import institutoAdmin from "./fotos/instituto-admin.png";
 import instipoa from "./fotos/instipoa.png";
 import jccarretos from "./fotos/jccarretos.png";
@@ -16,9 +15,7 @@ import Splide from "@splidejs/splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import thugBlack from "./fotos/keysibordered.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
-// library.add(fab, faLinkedin, faCheckSquare, faCoffee);
 const openLink = (url) => window.open(url, "_blank");
 function App() {
   useEffect(() => {
@@ -33,20 +30,6 @@ function App() {
     <div className={`${darkMode ? "bg-gray-700" : "bg-white"} h-screen`}>
       <div className={`${darkMode ? "bg-gray-700" : "bg-white"} p-2`}>
         <div className="blink">
-          {/* <div className="ml-8">
-            <label className="text-right m-auto">
-              <Switch
-                onChange={() => {
-                  darkMode
-                    ? localStorage.setItem("theme", "normal")
-                    : localStorage.setItem("theme", "dark");
-                  setDarkMode(!darkMode);
-                }}
-                checked={darkMode}
-                onColor="#1f2937"
-              />
-            </label>
-          </div> */}
           <div className="flex flex-col gap-1" id="aboutme">
             <img
               id="thug"
@@ -66,34 +49,25 @@ function App() {
                       setDarkMode(!darkMode);
                     }}
                     checked={darkMode}
-                    onColor="#1f2937"
-                    offColor="#1f2937"
-                    checkedIcon={
-                      <FontAwesomeIcon icon={faSun} size="2x" color="white" />
-                    }
-                    uncheckedIcon={
-                      <FontAwesomeIcon
-                        icon={faMoon}
-                        size="2x"
-                        flip="horizontal"
-                        className="ml-1 text-gray-400"
-                      />
-                    }
+                    onColor="#1F2937"
+                    offColor="#F87171"
+                    checkedIcon={null}
+                    uncheckedIcon={null}
                   />
                 </label>
               </div>
               <h1
                 className={`${
                   darkMode ? "text-white" : "text-gray-700"
-                } font-semibold text-center text-3xl mx-8`}
+                } font-semibold text-center text-5xl md:text-6xl mx-2`}
               >
-                Keysi Jones R. Fernandes
+                Hi, i'm Keysi Jones
               </h1>
 
               <p
                 className={`${
-                  darkMode ? "text-gray-400" : "text-gray-500"
-                } text-center font-semibold text-xl mx-8`}
+                  darkMode ? "text-gray-300" : "text-gray-600"
+                } text-center font-semibold text-2xl md:text-3xl lg:text-4xl mx-2 mt-2`}
               >
                 Frontend Web Developer
               </p>
@@ -130,8 +104,8 @@ function App() {
           </div>
           <h2
             className={`${
-              darkMode ? "text-white" : "text-gray-600"
-            } font-bold py-4 text-center text-4xl`}
+              darkMode ? "text-white" : "text-gray-700"
+            } font-bold py-4 text-center text-4xl sm:text-5xl`}
           >
             My projects
           </h2>
@@ -148,13 +122,11 @@ function App() {
                     } rounded-b-xl rounded-t-xl flex flex-col justify-between`}
                     style={{ minHeight: "61.5vh" }}
                   >
-                    <a href="https://jccarretos.vercel.app/">
-                      <img
-                        className="rounded-t-xl"
-                        alt="project"
-                        src={jccarretos}
-                      />
-                    </a>
+                    <img
+                      className="rounded-t-xl"
+                      alt="project"
+                      src={jccarretos}
+                    />
                     <h3
                       className={`text-2xl ${
                         darkMode ? "text-gray-600" : "text-gray-700"
@@ -184,13 +156,11 @@ function App() {
                     } rounded-b-xl rounded-t-xl flex flex-col justify-between`}
                     style={{ minHeight: "61.5vh" }}
                   >
-                    <a href="https://instituto-helper.netlify.app/">
-                      <img
-                        className="rounded-t-xl"
-                        alt="project"
-                        src={instipoa}
-                      />
-                    </a>
+                    <img
+                      className="rounded-t-xl"
+                      alt="project"
+                      src={instipoa}
+                    />
                     <h3
                       className={`text-2xl ${
                         darkMode ? "text-gray-600" : "text-gray-700"
@@ -222,13 +192,11 @@ function App() {
                     } rounded-b-xl rounded-t-xl flex flex-col justify-between`}
                     style={{ minHeight: "61.5vh" }}
                   >
-                    <a href="https://github.com/KeysiJones/instituto-admin">
-                      <img
-                        className="rounded-t-xl"
-                        alt="project"
-                        src={institutoAdmin}
-                      />
-                    </a>
+                    <img
+                      className="rounded-t-xl"
+                      alt="project"
+                      src={institutoAdmin}
+                    />
                     <h3
                       className={`text-2xl ${
                         darkMode ? "text-gray-600" : "text-gray-700 "
@@ -262,9 +230,7 @@ function App() {
                 darkMode ? "bg-white" : "bg-gray-200 border-gray-200 border-2"
               } rounded-b-xl rounded-t-xl project-item`}
             >
-              <a href="https://jccarretos.vercel.app/">
-                <img className="rounded-t-xl" alt="project" src={jccarretos} />
-              </a>
+              <img className="rounded-t-xl" alt="project" src={jccarretos} />
               <h3
                 className={`text-2xl ${
                   darkMode ? "text-gray-600" : "text-gray-700"
@@ -291,9 +257,7 @@ function App() {
                 darkMode ? "bg-white" : " bg-gray-200 "
               } rounded-b-xl rounded-t-xl project-item`}
             >
-              <a href="https://instituto-helper.netlify.app/">
-                <img className="rounded-t-xl" alt="project" src={instipoa} />
-              </a>
+              <img className="rounded-t-xl" alt="project" src={instipoa} />
               <h3
                 className={`text-2xl ${
                   darkMode ? "text-gray-600" : "text-gray-700"
@@ -320,13 +284,11 @@ function App() {
                 darkMode ? "bg-white" : "bg-gray-200 border-gray-200 border-2"
               } rounded-b-xl rounded-t-xl project-item`}
             >
-              <a href="https://github.com/KeysiJones/instituto-admin">
-                <img
-                  className="rounded-t-xl"
-                  alt="project"
-                  src={institutoAdmin}
-                />
-              </a>
+              <img
+                className="rounded-t-xl"
+                alt="project"
+                src={institutoAdmin}
+              />
               <h3
                 className={`text-2xl ${
                   darkMode ? "text-gray-600" : "text-gray-700 "
