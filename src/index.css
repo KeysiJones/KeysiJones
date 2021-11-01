@@ -69,17 +69,14 @@ code {
     monospace;
 }
 
-@media (min-width: 759px) and (max-width: 1920px) {
+@media (min-width: 759px) {
   div#aboutme {
     display: flex;
     flex-direction: row;
   }
 
   div#aboutme div#myinfo {
-    @apply my-auto -ml-32 mr-auto;
-  }
-
-  div#aboutme div#myinfo {
+    @apply m-auto;
     display: flex;
     flex-direction: column;
   }
@@ -105,16 +102,16 @@ code {
 }
 
 @media (min-width: 759px) and (max-width: 1200px) {
-  div#aboutme img#thug {
-    width: 500px;
-  }
+  /* div#aboutme img#thug {
+    width: 50%;
+  } */
 }
 
 @media (min-width: 1200px) {
   div#meus-projetos {
     display: flex;
     gap: 34px;
-    @apply my-8 mx-32;
+    @apply my-8;
   }
 }
 
@@ -130,6 +127,11 @@ code {
 
   div#aboutme div#myinfo {
     @apply mt-4 flex flex-col gap-2;
+  }
+
+  img#thug {
+    margin: auto;
+    width: 70%;
   }
 }
 
