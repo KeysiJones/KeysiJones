@@ -1,7 +1,6 @@
 import "./App.css";
 import {
   faLinkedin,
-  faFacebook,
   faTwitter,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
@@ -17,6 +16,7 @@ import Splide from "@splidejs/splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import thugBlack from "./fotos/keysibordered.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 // library.add(fab, faLinkedin, faCheckSquare, faCoffee);
 const openLink = (url) => window.open(url, "_blank");
@@ -33,7 +33,7 @@ function App() {
     <div className={`${darkMode ? "bg-gray-700" : "bg-white"} h-screen`}>
       <div className={`${darkMode ? "bg-gray-700" : "bg-white"} p-2`}>
         <div className="blink">
-          <div className="ml-8">
+          {/* <div className="ml-8">
             <label className="text-right m-auto">
               <Switch
                 onChange={() => {
@@ -46,7 +46,7 @@ function App() {
                 onColor="#1f2937"
               />
             </label>
-          </div>
+          </div> */}
           <div className="flex flex-col gap-1" id="aboutme">
             <img
               id="thug"
@@ -54,7 +54,34 @@ function App() {
               alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
               src={darkMode ? thugBlack : thug}
             />
+
             <div id="myinfo">
+              <div className="self-center mb-4">
+                <label className="text-right m-auto text-sm">
+                  <Switch
+                    onChange={() => {
+                      darkMode
+                        ? localStorage.setItem("theme", "normal")
+                        : localStorage.setItem("theme", "dark");
+                      setDarkMode(!darkMode);
+                    }}
+                    checked={darkMode}
+                    onColor="#1f2937"
+                    offColor="#1f2937"
+                    checkedIcon={
+                      <FontAwesomeIcon icon={faSun} size="2x" color="white" />
+                    }
+                    uncheckedIcon={
+                      <FontAwesomeIcon
+                        icon={faMoon}
+                        size="2x"
+                        flip="horizontal"
+                        className="ml-1 text-gray-400"
+                      />
+                    }
+                  />
+                </label>
+              </div>
               <h1
                 className={`${
                   darkMode ? "text-white" : "text-gray-700"
@@ -62,6 +89,7 @@ function App() {
               >
                 Keysi Jones R. Fernandes
               </h1>
+
               <p
                 className={`${
                   darkMode ? "text-gray-400" : "text-gray-500"
@@ -69,6 +97,7 @@ function App() {
               >
                 Frontend Web Developer
               </p>
+
               <div
                 id="main-buttons"
                 className="flex mx-4 mt-8 flex-col text-center justify-center 1s"
