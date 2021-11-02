@@ -8,12 +8,12 @@ import {
 import institutoAdmin from "./fotos/instituto-admin.png";
 import instipoa from "./fotos/instipoa.png";
 import jccarretos from "./fotos/jccarretos.png";
-import thug from "./fotos/keysiredandsquare.png";
+import thug from "./fotos/keysibordaroxa.png";
 import { useEffect, useState } from "react";
 import Switch from "react-switch";
 import Splide from "@splidejs/splide";
 import "@splidejs/splide/dist/css/splide.min.css";
-import thugBlack from "./fotos/keysiblacksquare.png";
+import thugBlack from "./fotos/keysibordergray.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const openLink = (url) => window.open(url, "_blank");
@@ -34,7 +34,7 @@ function App() {
             <div className="mx-auto">
               <img
                 id="thug"
-                className="mt-2 -mb-8"
+                className="mt-8 -mb-8"
                 alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
                 src={darkMode ? thugBlack : thug}
               />
@@ -44,14 +44,15 @@ function App() {
                 <label className="text-right m-auto text-sm">
                   <Switch
                     onChange={() => {
-                      darkMode
-                        ? localStorage.setItem("theme", "normal")
-                        : localStorage.setItem("theme", "dark");
+                      localStorage.setItem(
+                        "theme",
+                        darkMode ? "normal" : "dark"
+                      );
                       setDarkMode(!darkMode);
                     }}
                     checked={darkMode}
                     onColor="#374151"
-                    offColor="#F87171"
+                    offColor="#818CF8"
                     checkedIcon={null}
                     uncheckedIcon={null}
                   />
@@ -81,7 +82,7 @@ function App() {
               >
                 <div
                   className={`p-4 ${
-                    darkMode ? "bg-gray-700" : "bg-red-400"
+                    darkMode ? "bg-gray-700" : "bg-indigo-400"
                   } text-white rounded-xl font-bold text-5xl flex justify-around`}
                 >
                   <button
@@ -144,7 +145,7 @@ function App() {
                           openLink("https://jccarretos.vercel.app/")
                         }
                         className={`p-4 m-auto ${
-                          darkMode ? "bg-gray-700" : "bg-red-400"
+                          darkMode ? "bg-gray-700" : "bg-indigo-400"
                         } text-white rounded-b-xl w-full`}
                       >
                         <p className="font-bold text-3xl">Ver demo</p>
@@ -178,7 +179,7 @@ function App() {
                           openLink("https://instituto-helper.netlify.app/")
                         }
                         className={`p-4 m-auto ${
-                          darkMode ? "bg-gray-700" : "bg-red-400"
+                          darkMode ? "bg-gray-700" : "bg-indigo-400"
                         } text-white rounded-b-xl w-full`}
                       >
                         <p className="font-bold text-3xl">Ver demo</p>
@@ -216,7 +217,7 @@ function App() {
                           )
                         }
                         className={`p-4 m-auto ${
-                          darkMode ? "bg-gray-700" : "bg-red-400"
+                          darkMode ? "bg-gray-700" : "bg-indigo-400"
                         } text-white rounded-b-xl w-full`}
                       >
                         <p className="font-bold text-3xl">Ver demo</p>
@@ -248,7 +249,7 @@ function App() {
                     openLink("https://github.com/KeysiJones/instituto-admin")
                   }
                   className={`p-4 m-auto ${
-                    darkMode ? "bg-gray-700" : "bg-red-400"
+                    darkMode ? "bg-gray-700" : "bg-indigo-400"
                   } text-white rounded-b-xl w-full`}
                 >
                   <p className="font-bold text-3xl">Ver demo</p>
@@ -275,7 +276,7 @@ function App() {
                     openLink("https://github.com/KeysiJones/instituto-admin")
                   }
                   className={`p-4 m-auto ${
-                    darkMode ? "bg-gray-700" : "bg-red-400"
+                    darkMode ? "bg-gray-700" : "bg-indigo-400"
                   } text-white rounded-b-xl w-full`}
                 >
                   <p className="font-bold text-3xl">Ver demo</p>
@@ -306,7 +307,7 @@ function App() {
                     openLink("https://github.com/KeysiJones/instituto-admin")
                   }
                   className={`p-4 m-auto ${
-                    darkMode ? "bg-gray-700" : "bg-red-400"
+                    darkMode ? "bg-gray-700" : "bg-indigo-400"
                   } text-white rounded-b-xl w-full`}
                 >
                   <p className="font-bold text-3xl">Ver demo</p>
