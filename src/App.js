@@ -34,7 +34,7 @@ function App() {
               <img
                 id="thug"
                 className={`mt-8 ${
-                  darkMode ? "bg-yellow-400" : "bg-indigo-400 border-gray-300"
+                  darkMode ? "bg-gray-700" : "bg-indigo-400 border-gray-300"
                 } rounded-full border-8`}
                 alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
                 src={thugBlack}
@@ -52,10 +52,10 @@ function App() {
                       setDarkMode(!darkMode);
                     }}
                     checked={darkMode}
-                    onColor="#FBBF24"
-                    offColor="#818CF8"
-                    checkedIcon={null}
+                    onColor="#374151"
+                    offColor="#374151"
                     uncheckedIcon={null}
+                    onHandleColor="#FBBF24"
                   />
                 </label>
               </div>
@@ -103,26 +103,6 @@ function App() {
                 id="main-buttons"
                 className="flex mx-4 mt-8 flex-col text-center justify-center 1s"
               >
-                {/* <h1
-                  className={`${
-                    darkMode ? "text-yellow-400" : "text-gray-700"
-                  } font-semibold text-center text-3xl md:text-4xl mx-2 mb-4`}
-                >
-                  {window.innerWidth < 452 ? (
-                    <span>Let's talk</span>
-                  ) : (
-                    <span>
-                      <span
-                        className={`${
-                          darkMode ? "text-white" : "text-indigo-400"
-                        }`}
-                      >
-                        Common,
-                      </span>{" "}
-                      let's talk
-                    </span>
-                  )}
-                </h1> */}
                 <div
                   className={`p-2 ${
                     darkMode
