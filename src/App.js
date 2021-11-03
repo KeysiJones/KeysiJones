@@ -131,27 +131,44 @@ function App() {
               </div>
             </div>
           </div>
-          <h2
-            className={`${
-              darkMode ? "text-yellow-400" : "text-indigo-400"
-            } font-bold text-center text-5xl my-8`}
-          >
-            About me
-          </h2>
-          <p
-            className={`${
-              darkMode ? "text-white" : "text-gray-700"
-            } text-center text-3xl mx-8 font-semibold`}
-          >
-            I'm a software engineer that likes to create beautiful interfaces,
-            innovate, help others, solve problems and make people's lives
-            easier.
-            {/* In my free time, I
-            like to go out with my wife, watch movies with her, chat with people
-            on Discord to improve my English, walk our dog and create software.
-            My goal is to work on international projects, especially with
-            English. Feel free to DM me, let's talk !! */}
-          </p>
+          <div className="flex flex-col sm:flex-row m-auto mx-8 items-center gap-1">
+            <div>
+              <h2
+                className={`${
+                  darkMode ? "text-yellow-400" : "text-indigo-400"
+                } font-bold text-center text-5xl my-8`}
+              >
+                About me
+              </h2>
+              <p
+                className={`${
+                  darkMode ? "text-white" : "text-gray-700"
+                } text-center text-3xl sm:mx-18`}
+              >
+                I'm a software engineer that likes to create beautiful
+                interfaces, innovate, help others, solve problems and make
+                people's lives easier.
+              </p>
+            </div>
+            <div>
+              <h2
+                className={`${
+                  darkMode ? "text-yellow-400" : "text-indigo-400"
+                } font-bold text-center text-5xl my-8`}
+              >
+                Hobbies
+              </h2>
+              <p
+                className={`${
+                  darkMode ? "text-white" : "text-gray-700"
+                } text-center text-3xl sm:mx-24`}
+              >
+                In my free time, I like to go out with my wife, watch movies,
+                chat with people on Discord to improve my English, walk my dog
+                Maya and create software.
+              </p>
+            </div>
+          </div>
           <h2
             className={`${
               darkMode ? "text-yellow-400" : "text-indigo-400"
