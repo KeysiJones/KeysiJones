@@ -51,7 +51,7 @@ function App() {
                       setDarkMode(!darkMode);
                     }}
                     checked={darkMode}
-                    onColor="#374151"
+                    onColor="#FBBF24"
                     offColor="#818CF8"
                     checkedIcon={null}
                     uncheckedIcon={null}
@@ -59,20 +59,42 @@ function App() {
                 </label>
               </div>
               <div>
-                <h1
-                  className={`${
-                    darkMode ? "text-white" : "text-gray-700"
-                  } font-semibold text-center text-5xl md:text-6xl mx-2`}
-                >
-                  Hi, i'm Keysi Jones
+                <h1 className="font-semibold text-center text-5xl md:text-6xl mx-2">
+                  {window.innerWidth < 452 ? (
+                    <span
+                      className={`${darkMode ? "text-white" : "text-gray-700"}`}
+                    >
+                      Hi, i'm{" "}
+                      <span
+                        className={`${
+                          darkMode ? "text-yellow-400" : "text-indigo-400"
+                        }`}
+                      >
+                        Keysi
+                      </span>
+                    </span>
+                  ) : (
+                    <span
+                      className={`${darkMode ? "text-white" : "text-gray-700"}`}
+                    >
+                      Hi, i'm{" "}
+                      <span
+                        className={`${
+                          darkMode ? "text-yellow-400" : "text-indigo-400"
+                        }`}
+                      >
+                        Keysi Jones
+                      </span>
+                    </span>
+                  )}
                 </h1>
 
                 <p
                   className={`${
-                    darkMode ? "text-gray-300" : "text-gray-600"
-                  } text-center font-semibold text-2xl md:text-3xl lg:text-4xl mx-2 mt-2`}
+                    darkMode ? "text-white" : "text-gray-700"
+                  } text-center font-semibold text-3xl lg:text-4xl mx-2 mt-2`}
                 >
-                  Frontend Developer
+                  <span>Frontend</span> Developer
                 </p>
               </div>
 
@@ -80,10 +102,32 @@ function App() {
                 id="main-buttons"
                 className="flex mx-4 mt-8 flex-col text-center justify-center 1s"
               >
+                {/* <h1
+                  className={`${
+                    darkMode ? "text-yellow-400" : "text-gray-700"
+                  } font-semibold text-center text-3xl md:text-4xl mx-2 mb-4`}
+                >
+                  {window.innerWidth < 452 ? (
+                    <span>Let's talk</span>
+                  ) : (
+                    <span>
+                      <span
+                        className={`${
+                          darkMode ? "text-white" : "text-indigo-400"
+                        }`}
+                      >
+                        Common,
+                      </span>{" "}
+                      let's talk
+                    </span>
+                  )}
+                </h1> */}
                 <div
-                  className={`p-4 ${
-                    darkMode ? "bg-gray-700" : "bg-indigo-400"
-                  } text-white rounded-xl font-bold text-5xl flex justify-around`}
+                  className={`p-2 ${
+                    darkMode
+                      ? "bg-gray-700 text-yellow-400"
+                      : "bg-indigo-400 text-white"
+                  } rounded-xl font-bold text-5xl flex justify-around`}
                 >
                   <button
                     onClick={() =>
@@ -108,12 +152,32 @@ function App() {
           </div>
           <h2
             className={`${
+              darkMode ? "text-yellow-400" : "text-indigo-400"
+            } font-bold text-center text-4xl sm:text-5xl my-8`}
+          >
+            About me
+          </h2>
+          <p
+            className={`${
               darkMode ? "text-white" : "text-gray-700"
+            } text-center text-3xl mx-8 font-semibold`}
+          >
+            I'm a software engineer that likes to create beautiful interfaces,
+            innovate, help others, solve problems and make people's lives
+            easier.
+            {/* In my free time, I
+            like to go out with my wife, watch movies with her, chat with people
+            on Discord to improve my English, walk our dog and create software.
+            My goal is to work on international projects, especially with
+            English. Feel free to DM me, let's talk !! */}
+          </p>
+          <h2
+            className={`${
+              darkMode ? "text-yellow-400" : "text-indigo-400"
             } font-bold py-4 text-center text-4xl sm:text-5xl my-8`}
           >
             My projects
           </h2>
-
           <div className="splide">
             <div className="splide__track">
               <ul className="splide__list">
@@ -145,8 +209,10 @@ function App() {
                           openLink("https://jccarretos.vercel.app/")
                         }
                         className={`p-4 m-auto ${
-                          darkMode ? "bg-gray-700" : "bg-indigo-400"
-                        } text-white rounded-b-xl w-full`}
+                          darkMode
+                            ? "bg-gray-700 text-yellow-400"
+                            : "bg-indigo-400 text-white"
+                        }  rounded-b-xl w-full`}
                       >
                         <p className="font-bold text-3xl">Ver demo</p>
                       </button>
@@ -179,8 +245,10 @@ function App() {
                           openLink("https://instituto-helper.netlify.app/")
                         }
                         className={`p-4 m-auto ${
-                          darkMode ? "bg-gray-700" : "bg-indigo-400"
-                        } text-white rounded-b-xl w-full`}
+                          darkMode
+                            ? "bg-gray-700 text-yellow-400"
+                            : "bg-indigo-400 text-white"
+                        }  rounded-b-xl w-full`}
                       >
                         <p className="font-bold text-3xl">Ver demo</p>
                       </button>
@@ -217,8 +285,10 @@ function App() {
                           )
                         }
                         className={`p-4 m-auto ${
-                          darkMode ? "bg-gray-700" : "bg-indigo-400"
-                        } text-white rounded-b-xl w-full`}
+                          darkMode
+                            ? "bg-gray-700 text-yellow-400"
+                            : "bg-indigo-400 text-white"
+                        }  rounded-b-xl w-full`}
                       >
                         <p className="font-bold text-3xl">Ver demo</p>
                       </button>
@@ -249,8 +319,10 @@ function App() {
                     openLink("https://github.com/KeysiJones/instituto-admin")
                   }
                   className={`p-4 m-auto ${
-                    darkMode ? "bg-gray-700" : "bg-indigo-400"
-                  } text-white rounded-b-xl w-full`}
+                    darkMode
+                      ? "bg-gray-700 text-yellow-400"
+                      : "bg-indigo-400 text-white"
+                  }  rounded-b-xl w-full`}
                 >
                   <p className="font-bold text-3xl">Ver demo</p>
                 </button>
@@ -276,8 +348,10 @@ function App() {
                     openLink("https://github.com/KeysiJones/instituto-admin")
                   }
                   className={`p-4 m-auto ${
-                    darkMode ? "bg-gray-700" : "bg-indigo-400"
-                  } text-white rounded-b-xl w-full`}
+                    darkMode
+                      ? "bg-gray-700 text-yellow-400"
+                      : "bg-indigo-400 text-white"
+                  }  rounded-b-xl w-full`}
                 >
                   <p className="font-bold text-3xl">Ver demo</p>
                 </button>
@@ -307,8 +381,10 @@ function App() {
                     openLink("https://github.com/KeysiJones/instituto-admin")
                   }
                   className={`p-4 m-auto ${
-                    darkMode ? "bg-gray-700" : "bg-indigo-400"
-                  } text-white rounded-b-xl w-full`}
+                    darkMode
+                      ? "bg-gray-700 text-yellow-400"
+                      : "bg-indigo-400 text-white"
+                  }  rounded-b-xl w-full`}
                 >
                   <p className="font-bold text-3xl">Ver demo</p>
                 </button>
