@@ -153,7 +153,7 @@ function App() {
           <h2
             className={`${
               darkMode ? "text-yellow-400" : "text-indigo-400"
-            } font-bold text-center text-4xl sm:text-5xl my-8`}
+            } font-bold text-center text-5xl my-8`}
           >
             About me
           </h2>
@@ -174,7 +174,7 @@ function App() {
           <h2
             className={`${
               darkMode ? "text-yellow-400" : "text-indigo-400"
-            } font-bold py-4 text-center text-4xl sm:text-5xl my-8`}
+            } font-bold py-4 text-center text-5xl my-8`}
           >
             My projects
           </h2>
