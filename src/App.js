@@ -8,12 +8,11 @@ import {
 import institutoAdmin from "./fotos/instituto-admin.png";
 import instipoa from "./fotos/instipoa.png";
 import jccarretos from "./fotos/jccarretos.png";
-import thug from "./fotos/keysibordaroxa.png";
 import { useEffect, useState } from "react";
 import Switch from "react-switch";
 import Splide from "@splidejs/splide";
 import "@splidejs/splide/dist/css/splide.min.css";
-import thugBlack from "./fotos/keysibordergray.png";
+import thugBlack from "./fotos/keysipadrao.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const openLink = (url) => window.open(url, "_blank");
@@ -34,9 +33,11 @@ function App() {
             <div className="mx-auto">
               <img
                 id="thug"
-                className="mt-8 -mb-8"
+                className={`mt-8 -mb-8 ${
+                  darkMode ? "bg-yellow-400" : "bg-indigo-400 border-gray-300"
+                } rounded-full border-8`}
                 alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
-                src={darkMode ? thugBlack : thug}
+                src={thugBlack}
               />
             </div>
             <div id="myinfo" className="rounded-3xl">
