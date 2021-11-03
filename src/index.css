@@ -126,11 +126,11 @@ code {
   }
 
   div#aboutme div#myinfo {
-    @apply mt-4 flex flex-col gap-2;
+    @apply flex flex-col gap-2;
   }
 
   img#thug {
-    margin: auto;
+    @apply mx-auto my-8;
     width: 70%;
   }
 }

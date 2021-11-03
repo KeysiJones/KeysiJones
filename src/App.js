@@ -33,7 +33,7 @@ function App() {
             <div className="mx-auto">
               <img
                 id="thug"
-                className={`mt-8 -mb-8 ${
+                className={`mt-8 ${
                   darkMode ? "bg-yellow-400" : "bg-indigo-400 border-gray-300"
                 } rounded-full border-8`}
                 alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
