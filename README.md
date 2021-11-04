@@ -25,9 +25,7 @@ Here are some ideas to get you started:
 
 - ⚡ Fun fact: I live in apartment 404 😂
 
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-black?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/keysijones/)](https://www.linkedin.com/in/keysijones/)
-
-[![Twitter Badge](https://img.shields.io/badge/-twitter-black?style=flat-square&logo=Twitter&logoColor=white&link=https://twitter.com/keysi_jones)](https://twitter.com/keysi_jones)
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-black?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/keysijones/)](https://www.linkedin.com/in/keysijones/) [![Twitter Badge](https://img.shields.io/badge/-twitter-black?style=flat-square&logo=Twitter&logoColor=white&link=https://twitter.com/keysi_jones)](https://twitter.com/keysi_jones)
 
 ### About me
 
