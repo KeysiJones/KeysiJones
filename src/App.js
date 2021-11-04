@@ -29,13 +29,16 @@ function App() {
     <div className={`${darkMode ? "bg-gray-800" : "bg-white"} h-screen`}>
       <div className={`${darkMode ? "bg-gray-800" : "bg-white"} p-2`}>
         <div className="blink">
-          <div className="flex flex-col md:flex-row gap-1" id="aboutme">
+          <div
+            className="flex flex-col md:flex-row gap-1 sm:mt-12 sm:mb-32"
+            id="aboutme"
+          >
             <div className="mx-auto">
               <img
                 id="thug"
                 className={`mt-8 ${
-                  darkMode ? "bg-gray-700" : "bg-indigo-400 border-gray-300"
-                } rounded-full border-8`}
+                  darkMode ? "bg-gray-700" : "bg-indigo-400"
+                } rounded-full`}
                 alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
                 src={thugBlack}
               />
@@ -60,7 +63,7 @@ function App() {
                 </label>
               </div>
               <div>
-                <h1 className="font-semibold text-center text-5xl md:text-6xl mx-2">
+                <h1 className="font-semibold text-center text-5xl md:text-7xl mx-auto">
                   {window.innerWidth < 452 ? (
                     <span
                       className={`${darkMode ? "text-white" : "text-gray-700"}`}
@@ -93,7 +96,7 @@ function App() {
                 <p
                   className={`${
                     darkMode ? "text-white" : "text-gray-700"
-                  } text-center font-semibold text-3xl lg:text-4xl mx-2 mt-2`}
+                  } text-center font-semibold text-3xl lg:text-5xl mx-2 mt-2`}
                 >
                   <span>Frontend</span> Developer
                 </p>
@@ -108,7 +111,7 @@ function App() {
                     darkMode
                       ? "bg-gray-700 text-yellow-400"
                       : "bg-indigo-400 text-white"
-                  } rounded-xl font-bold text-5xl flex justify-around`}
+                  } rounded-xl font-bold text-5xl lg:text-6xl flex justify-around`}
                 >
                   <button
                     onClick={() =>
@@ -131,7 +134,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row m-auto mx-4 sm:mx-8 items-center gap-1 sm:my-14">
+          <div className="flex flex-col sm:flex-row m-auto mx-4 sm:mx-8 items-center gap-1 sm:my-32">
             <div>
               <h2
                 className={`${
@@ -289,7 +292,7 @@ function App() {
           <div id="meus-projetos" className="mx-4 my-8">
             <div
               className={`mb-8 ${
-                darkMode ? "bg-white" : "bg-gray-200 border-gray-200 border-2"
+                darkMode ? "bg-white" : "bg-white"
               } rounded-b-xl rounded-t-xl project-item`}
             >
               <img className="rounded-t-xl" alt="project" src={jccarretos} />
@@ -316,11 +319,7 @@ function App() {
                 </button>
               </div>
             </div>
-            <div
-              className={`mb-8 ${
-                darkMode ? "bg-white" : " bg-gray-200 "
-              } rounded-b-xl rounded-t-xl project-item`}
-            >
+            <div className="mb-8 bg-white rounded-b-xl rounded-t-xl project-item">
               <img className="rounded-t-xl" alt="project" src={instipoa} />
               <h3
                 className={`text-2xl ${
@@ -346,9 +345,9 @@ function App() {
               </div>
             </div>
             <div
-              className={`mb-8 ${
-                darkMode ? "bg-white" : "bg-gray-200 border-gray-200 border-2"
-              } rounded-b-xl rounded-t-xl project-item`}
+              className={`mb-8 bg-white rounded-b-xl rounded-t-xl project-item ${
+                !darkMode ? "border-2 border-indigo-400" : null
+              }`}
             >
               <img
                 className="rounded-t-xl"
@@ -372,7 +371,7 @@ function App() {
                     darkMode
                       ? "bg-gray-700 text-yellow-400"
                       : "bg-indigo-400 text-white"
-                  }  rounded-b-xl w-full`}
+                  }  rounded-b-md w-full`}
                 >
                   <p className="font-bold text-3xl">Ver demo</p>
                 </button>
