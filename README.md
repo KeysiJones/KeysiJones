@@ -1,4 +1,4 @@
-### Meu nome é Jones, Keysi Jones 😎
+### Hi, i'm Keysi Jones 😎
 
 <!--
 **KeysiJones/KeysiJones** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -14,12 +14,26 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+<!--
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ... -->
 
-[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/keysi-jones-fernandes-35482b139/)](https://www.linkedin.com/in/keysi-jones-fernandes-35482b139/)
+- ⚡ Fun fact: I live in apartment 404 😂
 
-### Sobre mim
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-black?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/keysijones/)](https://www.linkedin.com/in/keysijones/)
 
-Sou um desenvolvedor focado em tecnologias de frontend. Atualmente trabalho com Node.JS, NEST, MongoDB e TypeScript na HypeFlame.<!--and technical instructor at [@treinaweb](https://www.treinaweb.com.br/).-->
+[![Twitter Badge](https://img.shields.io/badge/-twitter-black?style=flat-square&logo=Twitter&logoColor=white&link=https://twitter.com/keysi_jones)](https://twitter.com/keysi_jones)
+
+### About me
+
+I'm a software engineer that likes to create beautiful
+interfaces, innovate, help others, solve problems and make
+people's lives easier.<!--and technical instructor at [@treinaweb](https://www.treinaweb.com.br/).-->
 
 [![KeysiJones's github stats](https://github-readme-stats.vercel.app/api?username=KeysiJones&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/)
 
@@ -30,16 +44,6 @@ Sou um desenvolvedor focado em tecnologias de frontend. Atualmente trabalho com 
 
 -->
 
-### Projetos relevantes para a stack que desejo trabalhar
+### My Portfolio
 
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=Backend-Instituto&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/Backend-Instituto)
-
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=instituto-admin&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/instituto-admin)
-
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=Backend-Blog&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/Backend-Blog)
-
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=githobby&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/githobby)
-
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=portfolio&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/portfolio)
-
-[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=todolistapp&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/todolistapp)
+[![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=KeysiJones&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/KeysiJones)
