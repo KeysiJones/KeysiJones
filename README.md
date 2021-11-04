@@ -1,4 +1,4 @@
-<div style="margin: auto; text-align: center">
+<div style="margin: auto; text-align: center; text-align-last: center;">
 
 ### Hi, i'm Keysi Jones, frontend developer, it's nice to meet you 😎
 
