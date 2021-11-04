@@ -131,7 +131,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row m-auto mx-8 items-center gap-1">
+          <div className="flex flex-col sm:flex-row m-auto mx-4 sm:mx-8 items-center gap-1 sm:my-14">
             <div>
               <h2
                 className={`${
@@ -143,7 +143,7 @@ function App() {
               <p
                 className={`${
                   darkMode ? "text-white" : "text-gray-700"
-                } text-center text-3xl sm:mx-18`}
+                } text-center text-3xl sm:mx-16`}
               >
                 I'm a software engineer that likes to create beautiful
                 interfaces, innovate, help others, solve problems and make
@@ -161,7 +161,7 @@ function App() {
               <p
                 className={`${
                   darkMode ? "text-white" : "text-gray-700"
-                } text-center text-3xl sm:mx-24`}
+                } text-center text-3xl sm:mx-16`}
               >
                 In my free time, I like to go out with my wife, watch movies,
                 chat with people on Discord to improve my English, walk my dog
@@ -181,11 +181,7 @@ function App() {
               <ul className="splide__list">
                 <li className="splide__slide">
                   <div
-                    className={`mb-8 ${
-                      darkMode
-                        ? "bg-white"
-                        : "bg-gray-200 border-gray-200 border-2"
-                    } rounded-b-xl rounded-t-xl flex flex-col justify-between`}
+                    className="mb-8 bg-white rounded-b-xl rounded-t-xl flex flex-col justify-between"
                     style={{ minHeight: "61.5vh" }}
                   >
                     <img
@@ -219,9 +215,7 @@ function App() {
                 </li>
                 <li className="splide__slide">
                   <div
-                    className={`mb-8 ${
-                      darkMode ? "bg-white" : " bg-gray-200 "
-                    } rounded-b-xl rounded-t-xl flex flex-col justify-between`}
+                    className="mb-8 bg-white rounded-b-xl rounded-t-xl flex flex-col justify-between"
                     style={{ minHeight: "61.5vh" }}
                   >
                     <img
@@ -255,11 +249,7 @@ function App() {
                 </li>
                 <li className="splide__slide">
                   <div
-                    className={`mb-8 ${
-                      darkMode
-                        ? "bg-white"
-                        : "bg-gray-200 border-gray-200 border-2"
-                    } rounded-b-xl rounded-t-xl flex flex-col justify-between`}
+                    className={`mb-8 bg-white rounded-b-xl rounded-t-xl flex flex-col justify-between`}
                     style={{ minHeight: "61.5vh" }}
                   >
                     <img
