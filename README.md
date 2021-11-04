@@ -1,3 +1,5 @@
+<div style="margin: auto; text-align: center">
+
 ### Hi, i'm Keysi Jones, frontend developer, it's nice to meet you 😎
 
 <!--
@@ -23,10 +25,9 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ... -->
 
-- ⚡ Fun fact: I live in apartment 404 😂
-</div>
+⚡ Fun fact: I live in apartment 404 😂
+
   <img src="https://external-preview.redd.it/U5Z6Tx85_hs_TV5Sm7990ckwCMX9LfU6upyLsoGJJdA.jpg?auto=webp&s=4fd81ce826fdc4b11ed98d1375edd643b23dba9c" width="50%" style="border-radius: 10px; margin-top: 10px"/>
-</div>
 
 Fortunately you can find me on LinkedIn or Twitter, links are below
 
@@ -50,3 +51,5 @@ people's lives easier.<!--and technical instructor at [@treinaweb](https://www.t
 ### My Portfolio
 
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=KeysiJones&repo=KeysiJones&theme=tokyonight&show_icons=true)](https://github.com/KeysiJones/KeysiJones)
+
+</div>
