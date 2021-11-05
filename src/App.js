@@ -37,7 +37,7 @@ function App() {
               <img
                 id="thug"
                 className={`mt-8 ${
-                  darkMode ? "bg-gray-700" : "bg-indigo-500"
+                  darkMode ? "bg-gray-700" : "bg-green-500"
                 } rounded-full`}
                 alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
                 src={thugBlack}
@@ -81,7 +81,7 @@ function App() {
                       Hi, i'm{" "}
                       <span
                         className={`${
-                          darkMode ? "text-yellow-400" : "text-indigo-500"
+                          darkMode ? "text-yellow-400" : "text-green-500"
                         }`}
                       >
                         Keysi
@@ -94,7 +94,7 @@ function App() {
                       Hi, i'm{" "}
                       <span
                         className={`${
-                          darkMode ? "text-yellow-400" : "text-indigo-500"
+                          darkMode ? "text-yellow-400" : "text-green-500"
                         }`}
                       >
                         Keysi Jones
@@ -120,7 +120,7 @@ function App() {
                   className={`p-2 ${
                     darkMode
                       ? "bg-gray-700 text-yellow-400"
-                      : "bg-indigo-500 text-white"
+                      : "bg-green-500 text-white"
                   } rounded-xl font-bold text-5xl lg:text-6xl flex justify-around`}
                 >
                   <button
@@ -148,7 +148,7 @@ function App() {
             <div>
               <h2
                 className={`${
-                  darkMode ? "text-yellow-400" : "text-indigo-500"
+                  darkMode ? "text-yellow-400" : "text-green-500"
                 } font-bold text-center text-5xl my-8`}
               >
                 About me
@@ -166,7 +166,7 @@ function App() {
             <div>
               <h2
                 className={`${
-                  darkMode ? "text-yellow-400" : "text-indigo-500"
+                  darkMode ? "text-yellow-400" : "text-green-500"
                 } font-bold text-center text-5xl my-8`}
               >
                 Hobbies
@@ -184,7 +184,7 @@ function App() {
           </div>
           <h2
             className={`${
-              darkMode ? "text-yellow-400" : "text-indigo-500"
+              darkMode ? "text-yellow-400" : "text-green-500"
             } font-bold py-4 text-center text-5xl my-8`}
           >
             My projects
@@ -218,7 +218,7 @@ function App() {
                         className={`p-4 m-auto ${
                           darkMode
                             ? "bg-gray-700 text-yellow-400"
-                            : "bg-indigo-500 text-white"
+                            : "bg-green-500 text-white"
                         }  rounded-b-xl w-full`}
                       >
                         <p className="font-bold text-3xl">Ver demo</p>
@@ -252,7 +252,7 @@ function App() {
                         className={`p-4 m-auto ${
                           darkMode
                             ? "bg-gray-700 text-yellow-400"
-                            : "bg-indigo-500 text-white"
+                            : "bg-green-500 text-white"
                         }  rounded-b-xl w-full`}
                       >
                         <p className="font-bold text-3xl">Ver demo</p>
@@ -288,7 +288,7 @@ function App() {
                         className={`p-4 m-auto ${
                           darkMode
                             ? "bg-gray-700 text-yellow-400"
-                            : "bg-indigo-500 text-white"
+                            : "bg-green-500 text-white"
                         }  rounded-b-xl w-full`}
                       >
                         <p className="font-bold text-3xl">Ver demo</p>
@@ -322,7 +322,7 @@ function App() {
                   className={`p-4 m-auto ${
                     darkMode
                       ? "bg-gray-700 text-yellow-400"
-                      : "bg-indigo-500 text-white"
+                      : "bg-green-500 text-white"
                   }  rounded-b-xl w-full`}
                 >
                   <p className="font-bold text-3xl">Ver demo</p>
@@ -347,7 +347,7 @@ function App() {
                   className={`p-4 m-auto ${
                     darkMode
                       ? "bg-gray-700 text-yellow-400"
-                      : "bg-indigo-500 text-white"
+                      : "bg-green-500 text-white"
                   }  rounded-b-xl w-full`}
                 >
                   <p className="font-bold text-3xl">Ver demo</p>
@@ -356,7 +356,7 @@ function App() {
             </div>
             <div
               className={`mb-8 bg-white rounded-b-xl rounded-t-xl project-item ${
-                !darkMode ? "border-t-4 border-indigo-500" : null
+                !darkMode ? "border-t-4 border-green-500" : null
               }`}
             >
               <img
@@ -380,7 +380,7 @@ function App() {
                   className={`p-4 m-auto ${
                     darkMode
                       ? "bg-gray-700 text-yellow-400"
-                      : "bg-indigo-500 text-white"
+                      : "bg-green-500 text-white"
                   }  rounded-b-md w-full`}
                 >
                   <p className="font-bold text-3xl">Ver demo</p>
