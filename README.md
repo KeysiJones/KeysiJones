@@ -15,6 +15,7 @@
   </a>
 </p>
 <br/>
+<h3>About me</h3>
 I'm a software engineer that likes to create beautiful
 interfaces, innovate, help others, solve problems and make
 people's lives easier. It's nice to meet you !
