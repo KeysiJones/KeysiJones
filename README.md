@@ -66,14 +66,11 @@ Areas of Expertise/Interest: Frontend Development & UI-UX Designing.
 </h3>
 <ul>
   <li><a href="https://github.com/KeysiJones/KeysiJones">My Personal Portfolio</a></li>
-  <li><a href="https://github.com/Nkap23/QuickPoll">QuickPoll | Fullstack Polling Application</a></li>
-  <li><a href="https://github.com/Project-SafeShop">SafeShop | System to ensure safe opening of shops during COVID</a></li>
-  <li><a href="https://github.com/Nkap23/u2net_bgremove_code">Image & Video Background Removal using Deep Learning</a></li>
 </ul>
 <h3>
   GitHub Stats 📊
 </h3>
-<p align="center">
+<p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=KeysiJones&show_icons=true&theme=vision-friendly-dark">
 </p>
 <h3>
