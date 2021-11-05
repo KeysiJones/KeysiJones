@@ -346,7 +346,7 @@ function App() {
             </div>
             <div
               className={`mb-8 bg-white rounded-b-xl rounded-t-xl project-item ${
-                !darkMode ? "border-2 border-indigo-400" : null
+                !darkMode ? "border-t-4 border-indigo-400" : null
               }`}
             >
               <img
