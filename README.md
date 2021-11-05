@@ -14,9 +14,6 @@
     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
   </a>
 </p>
-
-<h2>Hi, i'm Keysi 👋</h2>
-<br/>
 <br/>
 I'm a software engineer that likes to create beautiful
 interfaces, innovate, help others, solve problems and make
