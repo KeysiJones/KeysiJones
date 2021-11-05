@@ -15,7 +15,7 @@
   </a>
 </p>
 
-Hi, i'm Keysi 👋
+<h2>Hi, i'm Keysi 👋</h2>
 <br/>
 <br/>
 I'm a software engineer that likes to create beautiful
@@ -66,6 +66,9 @@ Areas of Expertise/Interest: Frontend Development & UI-UX Designing.
 </h3>
 <ul>
   <li><a href="https://github.com/KeysiJones/KeysiJones">My Personal Portfolio</a></li>
+  <li><a href="https://github.com/KeysiJones/jccarretos">JC Carretos | Landing page for my father's freight services</a></li>
+    <li><a href="https://github.com/KeysiJones/Instipoa">Instipoa | Web app created to make access to religious institute classes easier</a></li>
+    <li><a href="https://github.com/KeysiJones/instituto-admin">Instituto Admin | Web App created to administrate Instipoa's classes</a></li>
 </ul>
 <h3>
   GitHub Stats 📊
