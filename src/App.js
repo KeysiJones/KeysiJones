@@ -37,7 +37,7 @@ function App() {
               <img
                 id="thug"
                 className={`mt-8 ${
-                  darkMode ? "bg-gray-700" : "bg-green-500"
+                  darkMode ? "bg-green-400" : "bg-green-500"
                 } rounded-full`}
                 alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
                 src={thugBlack}
@@ -65,10 +65,10 @@ function App() {
                       />
                     }
                     className={`${
-                      darkMode ? "text-white" : "text-yellow-400"
+                      darkMode ? "text-white" : "text-green-400"
                     } text-2xl`}
                     checkedIcon={<FontAwesomeIcon icon={faMoon} size="1x" />}
-                    onHandleColor="#FBBF24"
+                    onHandleColor="#34D399"
                   />
                 </label>
               </div>
@@ -81,7 +81,7 @@ function App() {
                       Hi, i'm{" "}
                       <span
                         className={`${
-                          darkMode ? "text-yellow-400" : "text-green-500"
+                          darkMode ? "text-green-400" : "text-green-500"
                         }`}
                       >
                         Keysi
@@ -94,7 +94,7 @@ function App() {
                       Hi, i'm{" "}
                       <span
                         className={`${
-                          darkMode ? "text-yellow-400" : "text-green-500"
+                          darkMode ? "text-green-400" : "text-green-500"
                         }`}
                       >
                         Keysi Jones
@@ -119,7 +119,7 @@ function App() {
                 <div
                   className={`p-2 ${
                     darkMode
-                      ? "bg-gray-700 text-yellow-400"
+                      ? "bg-gray-700 text-green-400"
                       : "bg-green-500 text-white"
                   } rounded-xl font-bold text-5xl lg:text-6xl flex justify-around`}
                 >
@@ -148,7 +148,7 @@ function App() {
             <div>
               <h2
                 className={`${
-                  darkMode ? "text-yellow-400" : "text-green-500"
+                  darkMode ? "text-green-400" : "text-green-500"
                 } font-bold text-center text-5xl my-8`}
               >
                 About me
@@ -166,7 +166,7 @@ function App() {
             <div>
               <h2
                 className={`${
-                  darkMode ? "text-yellow-400" : "text-green-500"
+                  darkMode ? "text-green-400" : "text-green-500"
                 } font-bold text-center text-5xl my-8`}
               >
                 Hobbies
@@ -184,7 +184,7 @@ function App() {
           </div>
           <h2
             className={`${
-              darkMode ? "text-yellow-400" : "text-green-500"
+              darkMode ? "text-green-400" : "text-green-500"
             } font-bold py-4 text-center text-5xl my-8`}
           >
             My projects
@@ -217,7 +217,7 @@ function App() {
                         }
                         className={`p-4 m-auto ${
                           darkMode
-                            ? "bg-gray-700 text-yellow-400"
+                            ? "bg-gray-700 text-green-400"
                             : "bg-green-500 text-white"
                         }  rounded-b-xl w-full`}
                       >
@@ -251,7 +251,7 @@ function App() {
                         }
                         className={`p-4 m-auto ${
                           darkMode
-                            ? "bg-gray-700 text-yellow-400"
+                            ? "bg-gray-700 text-green-400"
                             : "bg-green-500 text-white"
                         }  rounded-b-xl w-full`}
                       >
@@ -287,7 +287,7 @@ function App() {
                         }
                         className={`p-4 m-auto ${
                           darkMode
-                            ? "bg-gray-700 text-yellow-400"
+                            ? "bg-gray-700 text-green-400"
                             : "bg-green-500 text-white"
                         }  rounded-b-xl w-full`}
                       >
@@ -321,7 +321,7 @@ function App() {
                   }
                   className={`p-4 m-auto ${
                     darkMode
-                      ? "bg-gray-700 text-yellow-400"
+                      ? "bg-gray-700 text-green-400"
                       : "bg-green-500 text-white"
                   }  rounded-b-xl w-full`}
                 >
@@ -346,7 +346,7 @@ function App() {
                   }
                   className={`p-4 m-auto ${
                     darkMode
-                      ? "bg-gray-700 text-yellow-400"
+                      ? "bg-gray-700 text-green-400"
                       : "bg-green-500 text-white"
                   }  rounded-b-xl w-full`}
                 >
@@ -379,7 +379,7 @@ function App() {
                   }
                   className={`p-4 m-auto ${
                     darkMode
-                      ? "bg-gray-700 text-yellow-400"
+                      ? "bg-gray-700 text-green-400"
                       : "bg-green-500 text-white"
                   }  rounded-b-md w-full`}
                 >
