@@ -13,7 +13,7 @@ import Splide from "@splidejs/splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import thugBlack from "./fotos/keysipadrao.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCloudSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const openLink = (url) => window.open(url, "_blank");
 function App() {
@@ -59,13 +59,13 @@ function App() {
                     offColor="#374151"
                     uncheckedIcon={
                       <FontAwesomeIcon
-                        icon={faCloudSun}
+                        icon={faSun}
                         size="1x"
                         className="ml-1 mb-0.5"
                       />
                     }
                     className={`${
-                      darkMode ? "text-white" : "text-green-400"
+                      darkMode ? "text-white" : "text-yellow-400"
                     } text-2xl`}
                     checkedIcon={<FontAwesomeIcon icon={faMoon} size="1x" />}
                     onHandleColor="#34D399"
