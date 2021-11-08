@@ -241,7 +241,7 @@ function App() {
                         darkMode ? "text-gray-600" : "text-gray-700"
                       } text-center pb-4 m-2 font-semibold`}
                     >
-                      Instipoa is an web app made to make the access to our
+                      Instipoa is a web app made to make the access to our
                       Institute classes easy.
                     </h3>
                     <div className="text-center">
