@@ -1,9 +1,4 @@
 import "./App.css";
-import {
-  faLinkedin,
-  faTwitter,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
 import institutoAdmin from "./fotos/instituto-admin.png";
 import instipoa from "./fotos/instipoa.png";
 import jccarretos from "./fotos/jccarretos.png";
@@ -14,6 +9,10 @@ import "@splidejs/splide/dist/css/splide.min.css";
 import thugBlack from "./fotos/keysipadrao.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { CarrouselCard } from "./components/carrousel-card";
+import { Carrousel } from "./components/carrousel";
+import { ContactCard } from "./components/contact-card";
+import { Footer } from "./components/footer";
 
 const openLink = (url) => window.open(url, "_blank");
 function App() {
@@ -111,37 +110,7 @@ function App() {
                   <span>Frontend</span> Developer
                 </p>
               </div>
-
-              <div
-                id="main-buttons"
-                className="flex mx-4 mt-8 flex-col text-center justify-center 1s"
-              >
-                <div
-                  className={`p-2 ${
-                    darkMode
-                      ? "bg-gray-700 text-green-400"
-                      : "bg-green-500 text-white"
-                  } rounded-xl font-bold text-5xl lg:text-6xl flex justify-around`}
-                >
-                  <button
-                    onClick={() =>
-                      openLink("https://www.linkedin.com/in/keysijones/")
-                    }
-                  >
-                    <FontAwesomeIcon icon={faLinkedin} size="1x" />
-                  </button>
-                  <button
-                    onClick={() => openLink("https://github.com/KeysiJones")}
-                  >
-                    <FontAwesomeIcon icon={faGithub} size="1x" />
-                  </button>
-                  <button
-                    onClick={() => openLink("https://twitter.com/keysi_jones")}
-                  >
-                    <FontAwesomeIcon icon={faTwitter} size="1x" />
-                  </button>
-                </div>
-              </div>
+              <ContactCard darkMode={darkMode} />
             </div>
           </div>
           <div className="flex flex-col sm:flex-row m-auto mx-4 sm:mx-8 items-center gap-1 sm:my-32">
@@ -189,116 +158,32 @@ function App() {
           >
             My projects
           </h2>
-          <div className="splide">
-            <div className="splide__track">
-              <ul className="splide__list">
-                <li className="splide__slide">
-                  <div
-                    className="mb-8 bg-white rounded-b-xl rounded-t-xl flex flex-col justify-between"
-                    style={{ minHeight: "61.5vh" }}
-                  >
-                    <img
-                      className="rounded-t-xl"
-                      alt="project"
-                      src={jccarretos}
-                    />
-                    <h3
-                      className={`text-2xl ${
-                        darkMode ? "text-gray-600" : "text-gray-700"
-                      } text-center pb-4 m-2 font-semibold`}
-                    >
-                      JC Carretos is a website made to spread my father's
-                      freight services.
-                    </h3>
-                    <div className="text-center">
-                      <button
-                        onClick={() =>
-                          openLink("https://jccarretos.vercel.app/")
-                        }
-                        className={`p-4 m-auto ${
-                          darkMode
-                            ? "bg-gray-700 text-green-400"
-                            : "bg-green-500 text-white"
-                        }  rounded-b-xl w-full`}
-                      >
-                        <p className="font-bold text-3xl">Ver demo</p>
-                      </button>
-                    </div>
-                  </div>
-                </li>
-                <li className="splide__slide">
-                  <div
-                    className="mb-8 bg-white rounded-b-xl rounded-t-xl flex flex-col justify-between"
-                    style={{ minHeight: "61.5vh" }}
-                  >
-                    <img
-                      className="rounded-t-xl"
-                      alt="project"
-                      src={instipoa}
-                    />
-                    <h3
-                      className={`text-2xl ${
-                        darkMode ? "text-gray-600" : "text-gray-700"
-                      } text-center pb-4 m-2 font-semibold`}
-                    >
-                      Instipoa is a web app made to make the access to our
-                      Institute classes easy.
-                    </h3>
-                    <div className="text-center">
-                      <button
-                        onClick={() =>
-                          openLink("https://instituto-helper.netlify.app/")
-                        }
-                        className={`p-4 m-auto ${
-                          darkMode
-                            ? "bg-gray-700 text-green-400"
-                            : "bg-green-500 text-white"
-                        }  rounded-b-xl w-full`}
-                      >
-                        <p className="font-bold text-3xl">Ver demo</p>
-                      </button>
-                    </div>
-                  </div>
-                </li>
-                <li className="splide__slide">
-                  <div
-                    className={`mb-8 bg-white rounded-b-xl rounded-t-xl flex flex-col justify-between`}
-                    style={{ minHeight: "61.5vh" }}
-                  >
-                    <img
-                      className="rounded-t-xl"
-                      alt="project"
-                      src={institutoAdmin}
-                    />
-                    <h3
-                      className={`text-2xl ${
-                        darkMode ? "text-gray-600" : "text-gray-700 "
-                      } text-center pb-4 m-2 font-semibold`}
-                    >
-                      Instituto admin was developed to administrate Instipoa's
-                      classes.
-                    </h3>
-                    <div className="text-center">
-                      <button
-                        onClick={() =>
-                          openLink(
-                            "https://github.com/KeysiJones/instituto-admin"
-                          )
-                        }
-                        className={`p-4 m-auto ${
-                          darkMode
-                            ? "bg-gray-700 text-green-400"
-                            : "bg-green-500 text-white"
-                        }  rounded-b-xl w-full`}
-                      >
-                        <p className="font-bold text-3xl">Ver demo</p>
-                      </button>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <Carrousel>
+            <CarrouselCard
+              link="https://jccarretos.vercel.app/"
+              openLink={openLink}
+              cardImage={jccarretos}
+              darkMode={darkMode}
+              description="JC Carretos is a website made to spread my father's
+                      freight services."
+            />
+            <CarrouselCard
+              link="https://instituto-helper.vercel.app/"
+              openLink={openLink}
+              cardImage={instipoa}
+              darkMode={darkMode}
+              description="Instipoa is a web app made to make the access to our
+                  Institute classes easy."
+            />
+            <CarrouselCard
+              link="https://instituto-admin.vercel.app/"
+              openLink={openLink}
+              cardImage={institutoAdmin}
+              darkMode={darkMode}
+              description="Instituto admin was developed to administrate Instipoa's
+                  classes."
+            />
+          </Carrousel>
           <div id="meus-projetos" className="mx-4 my-8">
             <div
               className={`mb-8 ${
@@ -388,6 +273,7 @@ function App() {
               </div>
             </div>
           </div>
+          <Footer darkMode={darkMode} />
         </div>
       </div>
     </div>
