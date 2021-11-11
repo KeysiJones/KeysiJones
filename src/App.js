@@ -9,10 +9,15 @@ import "@splidejs/splide/dist/css/splide.min.css";
 import thugBlack from "./fotos/keysipadrao.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-import { CarrouselCard } from "./components/carrousel-card";
-import { Carrousel } from "./components/carrousel";
-import { ContactCard } from "./components/contact-card";
-import { Footer } from "./components/footer";
+import {
+  Footer,
+  ContactCard,
+  Carrousel,
+  CarrouselCard,
+  SectionTitle,
+  RegularCard,
+  SectionDescription,
+} from "./components";
 
 const openLink = (url) => window.open(url, "_blank");
 function App() {
@@ -115,49 +120,25 @@ function App() {
           </div>
           <div className="flex flex-col sm:flex-row m-auto mx-4 sm:mx-8 items-center gap-1 sm:my-32">
             <div>
-              <h2
-                className={`${
-                  darkMode ? "text-green-400" : "text-green-500"
-                } font-bold text-center text-5xl my-8`}
-              >
-                About me
-              </h2>
-              <p
-                className={`${
-                  darkMode ? "text-white" : "text-gray-700"
-                } text-center text-3xl sm:mx-16`}
-              >
-                I'm a software engineer that likes to create beautiful
+              <SectionTitle title="About me" />
+              <SectionDescription
+                darkMode={darkMode}
+                description="I'm a software engineer that likes to create beautiful
                 interfaces, innovate, help others, solve problems and make
-                people's lives easier.
-              </p>
+                people's lives easier."
+              />
             </div>
             <div>
-              <h2
-                className={`${
-                  darkMode ? "text-green-400" : "text-green-500"
-                } font-bold text-center text-5xl my-8`}
-              >
-                Hobbies
-              </h2>
-              <p
-                className={`${
-                  darkMode ? "text-white" : "text-gray-700"
-                } text-center text-3xl sm:mx-16`}
-              >
-                In my free time, I like to go out with my wife, watch movies,
+              <SectionTitle title="Hobbies" />
+              <SectionDescription
+                darkMode={darkMode}
+                description="In my free time, I like to go out with my wife, watch movies,
                 chat with people on Discord to improve my English, walk my dog
-                Maya and create software.
-              </p>
+                Maya and create software."
+              />
             </div>
           </div>
-          <h2
-            className={`${
-              darkMode ? "text-green-400" : "text-green-500"
-            } font-bold py-4 text-center text-5xl my-8`}
-          >
-            My projects
-          </h2>
+          <SectionTitle title="My projects" />
           <Carrousel>
             <CarrouselCard
               link="https://jccarretos.vercel.app/"
@@ -168,7 +149,7 @@ function App() {
                       freight services."
             />
             <CarrouselCard
-              link="https://instituto-helper.vercel.app/"
+              link="https://instituto-helper.netlify.app/"
               openLink={openLink}
               cardImage={instipoa}
               darkMode={darkMode}
@@ -185,93 +166,29 @@ function App() {
             />
           </Carrousel>
           <div id="meus-projetos" className="mx-4 my-8">
-            <div
-              className={`mb-8 ${
-                darkMode ? "bg-white" : "bg-white"
-              } rounded-b-xl rounded-t-xl project-item`}
-            >
-              <img className="rounded-t-xl" alt="project" src={jccarretos} />
-              <h3
-                className={`text-2xl ${
-                  darkMode ? "text-gray-600" : "text-gray-700"
-                } text-center pb-4 m-2 font-semibold`}
-              >
-                JC Carretos is a website made to spread my father's freight
-                services.
-              </h3>
-              <div className="text-center">
-                <button
-                  onClick={() =>
-                    openLink("https://github.com/KeysiJones/instituto-admin")
-                  }
-                  className={`p-4 m-auto ${
-                    darkMode
-                      ? "bg-gray-700 text-green-400"
-                      : "bg-green-500 text-white"
-                  }  rounded-b-xl w-full`}
-                >
-                  <p className="font-bold text-3xl">Ver demo</p>
-                </button>
-              </div>
-            </div>
-            <div className="mb-8 bg-white rounded-b-xl rounded-t-xl project-item">
-              <img className="rounded-t-xl" alt="project" src={instipoa} />
-              <h3
-                className={`text-2xl ${
-                  darkMode ? "text-gray-600" : "text-gray-700"
-                } text-center pb-4 m-2 font-semibold`}
-              >
-                Instipoa is an web app made to make the access to our Institute
-                classes easy.
-              </h3>
-              <div className="text-center">
-                <button
-                  onClick={() =>
-                    openLink("https://github.com/KeysiJones/instituto-admin")
-                  }
-                  className={`p-4 m-auto ${
-                    darkMode
-                      ? "bg-gray-700 text-green-400"
-                      : "bg-green-500 text-white"
-                  }  rounded-b-xl w-full`}
-                >
-                  <p className="font-bold text-3xl">Ver demo</p>
-                </button>
-              </div>
-            </div>
-            <div
-              className={`mb-8 bg-white rounded-b-xl rounded-t-xl project-item ${
-                !darkMode ? "border-t-4 border-green-500" : null
-              }`}
-            >
-              <img
-                className="rounded-t-xl"
-                alt="project"
-                src={institutoAdmin}
-              />
-              <h3
-                className={`text-2xl ${
-                  darkMode ? "text-gray-600" : "text-gray-700 "
-                } text-center pb-4 m-2 font-semibold`}
-              >
-                Instituto admin was developed to administrate Instipoa's
-                classes.
-              </h3>
-              <div className="text-center">
-                <button
-                  onClick={() =>
-                    openLink("https://github.com/KeysiJones/instituto-admin")
-                  }
-                  className={`p-4 m-auto ${
-                    darkMode
-                      ? "bg-gray-700 text-green-400"
-                      : "bg-green-500 text-white"
-                  }  rounded-b-md w-full`}
-                >
-                  <p className="font-bold text-3xl">Ver demo</p>
-                </button>
-              </div>
-            </div>
+            <RegularCard
+              darkMode={darkMode}
+              image={jccarretos}
+              openLink={openLink}
+              link="https://jccarretos.vercel.app"
+              description="JC Carretos is a website made to help my father's freight business"
+            />
+            <RegularCard
+              darkMode={darkMode}
+              image={instipoa}
+              openLink={openLink}
+              link="https://instituto-helper.netlify.app"
+              description="Instipoa is an web app made to make the access to our Institute
+              classes easy."
+            />
+            <RegularCard
+              darkMode={darkMode}
+              image={institutoAdmin}
+              openLink={openLink}
+              link="https://instituto-admin.vercel.app"
+              description="Instituto admin was developed to administrate Instipoa's
+              classes."
+            />
           </div>
           <Footer darkMode={darkMode} />
         </div>
