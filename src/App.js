@@ -30,25 +30,60 @@ function App() {
   );
 
   return (
-    <div className={`${darkMode ? "bg-gray-800" : "bg-white"} h-screen`}>
-      <div className={`${darkMode ? "bg-gray-800" : "bg-white"} p-2`}>
+    <div
+      className={`${
+        darkMode ? "bg-gradient-to-br from-gray-800 to-gray-700" : "bg-white"
+      } h-screen`}
+    >
+      <div
+        className={`${
+          darkMode ? "bg-gradient-to-br from-gray-800 to-gray-700" : "bg-white"
+        } p-2`}
+      >
         <div className="blink">
           <div
             className="flex flex-col md:flex-row gap-1 sm:mt-12 sm:mb-32"
             id="aboutme"
           >
+            <div className="self-center mb-4" id="switch-small">
+              <label className="text-right m-auto text-sm">
+                <Switch
+                  onChange={() => {
+                    localStorage.setItem("theme", darkMode ? "normal" : "dark");
+                    setDarkMode(!darkMode);
+                  }}
+                  checked={darkMode}
+                  onColor="#374151"
+                  offColor="#374151"
+                  uncheckedIcon={
+                    <FontAwesomeIcon
+                      icon={faSun}
+                      size="1x"
+                      className="ml-1 mb-0.5"
+                    />
+                  }
+                  className={`${
+                    darkMode ? "text-white" : "text-yellow-400"
+                  } text-2xl`}
+                  checkedIcon={<FontAwesomeIcon icon={faMoon} size="1x" />}
+                  onHandleColor="#34D399"
+                />
+              </label>
+            </div>
             <div className="mx-auto">
               <img
                 id="thug"
                 className={`mt-8 ${
-                  darkMode ? "bg-green-400" : "bg-green-500"
+                  darkMode
+                    ? "bg-gradient-to-br from-green-400 to-cyan-500"
+                    : "bg-gradient-to-br from-green-400 to-green-300"
                 } rounded-full`}
                 alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
                 src={thugBlack}
               />
             </div>
-            <div id="myinfo" className="rounded-3xl">
-              <div className="self-center mb-4">
+            <div className="flex flex-col self-center m-auto">
+              <div className="self-center mb-4" id="switch-big">
                 <label className="text-right m-auto text-sm">
                   <Switch
                     onChange={() => {
@@ -76,46 +111,54 @@ function App() {
                   />
                 </label>
               </div>
-              <div>
-                <h1 className="font-semibold text-center text-5xl md:text-7xl mx-auto">
-                  {window.innerWidth < 452 ? (
-                    <span
-                      className={`${darkMode ? "text-white" : "text-gray-700"}`}
-                    >
-                      Hi, i'm{" "}
+              <div id="myinfo" className="rounded-3xl">
+                <div>
+                  <h1 className="font-semibold text-center text-5xl md:text-7xl mx-auto">
+                    {window.innerWidth < 452 ? (
                       <span
                         className={`${
-                          darkMode ? "text-green-400" : "text-green-500"
+                          darkMode ? "text-white" : "text-gray-700"
                         }`}
                       >
-                        Keysi
+                        Hi, i'm{" "}
+                        <span
+                          className={`${
+                            darkMode ? "text-green-400" : "text-green-500"
+                          }`}
+                        >
+                          Keysi
+                        </span>
                       </span>
-                    </span>
-                  ) : (
-                    <span
-                      className={`${darkMode ? "text-white" : "text-gray-700"}`}
-                    >
-                      Hi, i'm{" "}
+                    ) : (
                       <span
                         className={`${
-                          darkMode ? "text-green-400" : "text-green-500"
+                          darkMode ? "text-white" : "text-gray-700"
                         }`}
                       >
-                        Keysi Jones
+                        Hi, i'm{" "}
+                        <span
+                          className={`${
+                            darkMode ? "text-green-400" : "text-green-500"
+                          }`}
+                        >
+                          Keysi Jones
+                        </span>
                       </span>
-                    </span>
-                  )}
-                </h1>
+                    )}
+                  </h1>
 
-                <p
-                  className={`${
-                    darkMode ? "text-white" : "text-gray-700"
-                  } text-center font-semibold text-3xl lg:text-5xl mx-2 mt-2`}
-                >
-                  <span>Frontend</span> Developer
-                </p>
+                  <p
+                    className={`${
+                      darkMode ? "text-white" : "text-gray-700"
+                    } text-center font-semibold text-3xl lg:text-5xl mx-2 mt-2`}
+                  >
+                    <span>Frontend</span> Developer
+                  </p>
+                </div>
+                {window.innerWidth > 452 ? (
+                  <ContactCard darkMode={darkMode} />
+                ) : null}
               </div>
-              <ContactCard darkMode={darkMode} />
             </div>
           </div>
           <div className="flex flex-col sm:flex-row m-auto mx-4 sm:mx-8 items-center gap-1 sm:my-32">
@@ -182,6 +225,7 @@ function App() {
               classes easy."
             />
             <RegularCard
+              hasBorder
               darkMode={darkMode}
               image={institutoAdmin}
               openLink={openLink}

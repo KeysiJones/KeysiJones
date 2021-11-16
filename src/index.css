@@ -70,6 +70,9 @@ code {
 }
 
 @media (min-width: 759px) {
+  div#switch-small {
+    display: none;
+  }
   div#aboutme {
     display: flex;
     flex-direction: row;
@@ -89,11 +92,13 @@ code {
 
   div#meus-projetos > div.project-item {
     @apply flex flex-col justify-between;
+    transform: rotate(3deg);
   }
 
   div#meus-projetos > div.project-item:hover {
-    transform: scale(1.1);
+    transform: scale(0.9) rotate(0deg);
     transition: all 0.2s ease-in;
+    cursor: ne-resizer;
   }
 
   div.splide {
@@ -116,6 +121,9 @@ code {
 }
 
 @media (max-width: 758px) {
+  div#switch-big {
+    display: none;
+  }
   div.splide {
     @apply mx-auto mt-8;
     width: 90%;

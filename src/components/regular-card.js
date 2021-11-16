@@ -1,8 +1,15 @@
-function RegularCard({ darkMode, image, openLink, link, description }) {
+function RegularCard({
+  darkMode,
+  image,
+  openLink,
+  link,
+  description,
+  hasBorder,
+}) {
   return (
     <div
       className={`mb-8 bg-white rounded-b-xl rounded-t-xl project-item ${
-        !darkMode ? "border-t-4 border-green-500" : null
+        !darkMode && hasBorder ? "border-t-4 border-green-500" : null
       }`}
     >
       <img className="rounded-t-xl" alt="project" src={image} />
