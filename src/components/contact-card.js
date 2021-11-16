@@ -4,8 +4,11 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useContext } from "react";
+import { AppContext } from "../App";
 
-function ContactCard({ darkMode }) {
+function ContactCard() {
+  const theme = useContext(AppContext);
   const openLink = (url) => window.open(url, "_blank");
 
   return (
@@ -15,7 +18,9 @@ function ContactCard({ darkMode }) {
     >
       <div
         className={`p-2 ${
-          darkMode ? "bg-gray-700 text-green-400" : "bg-green-500 text-white"
+          theme.darkMode
+            ? "bg-gray-700 text-green-400"
+            : "bg-green-500 text-white"
         } rounded-xl font-bold text-5xl lg:text-6xl flex justify-around`}
       >
         <button
