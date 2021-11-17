@@ -26,7 +26,7 @@ function RegularCard({ image, openLink, link, description, hasBorder }) {
               : "bg-green-500 text-white"
           }  rounded-b-md w-full`}
         >
-          <p className="font-bold text-3xl">Ver demo</p>
+          <p className="font-bold text-3xl">Live demo</p>
         </button>
       </div>
     </div>
