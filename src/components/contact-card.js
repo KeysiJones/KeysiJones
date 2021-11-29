@@ -41,7 +41,7 @@ function ContactCard({ footer }) {
         </button>
         <button
           onClick={() => openLink("https://twitter.com/keysi_jones")}
-          className="mx-4"
+          className="mx-8"
         >
           <FontAwesomeIcon icon={faTwitter} size="1x" />
         </button>
