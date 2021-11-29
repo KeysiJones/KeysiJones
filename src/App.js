@@ -72,15 +72,13 @@ function App() {
                     offColor="#374151"
                     uncheckedIcon={
                       <FontAwesomeIcon
-                        icon={faSun}
+                        icon={faMoon}
                         size="1x"
-                        className="ml-1 mb-0.5"
+                        className="ml-1 mb-0.5 text-white"
                       />
                     }
-                    className={`${
-                      darkMode ? "text-white" : "text-yellow-400"
-                    } text-2xl`}
-                    checkedIcon={<FontAwesomeIcon icon={faMoon} size="1x" />}
+                    className="text-yellow-400 text-2xl"
+                    checkedIcon={<FontAwesomeIcon icon={faSun} size="1x" />}
                     onHandleColor="#34D399"
                   />
                 </label>
@@ -114,15 +112,13 @@ function App() {
                       offColor="#374151"
                       uncheckedIcon={
                         <FontAwesomeIcon
-                          icon={faSun}
+                          icon={faMoon}
                           size="1x"
-                          className="ml-1 mb-0.5"
+                          className="ml-1 mb-0.5 text-white"
                         />
                       }
-                      className={`${
-                        darkMode ? "text-white" : "text-yellow-400"
-                      } text-2xl`}
-                      checkedIcon={<FontAwesomeIcon icon={faMoon} size="1x" />}
+                      className="text-yellow-400 text-2xl"
+                      checkedIcon={<FontAwesomeIcon icon={faSun} size="1x" />}
                       onHandleColor="#34D399"
                     />
                   </label>
