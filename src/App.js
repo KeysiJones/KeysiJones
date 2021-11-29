@@ -49,7 +49,7 @@ function App() {
             darkMode
               ? "bg-gradient-to-br from-gray-800 to-gray-700"
               : "bg-white"
-          } p-2`}
+          } py-2`}
         >
           <div className="blink">
             <div
