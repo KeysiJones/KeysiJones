@@ -63,6 +63,7 @@ Areas of Expertise/Interest: Frontend Development & UI-UX Designing.
   Projects 👨‍💻
 </h3>
 <ul>
+<li><a href="https://github.com/KeysiJones/my-blog">My personal tech blog</a></li>
   <li><a href="https://github.com/KeysiJones/KeysiJones">My Personal Portfolio</a></li>
   <li><a href="https://github.com/KeysiJones/jccarretos">JC Carretos | Landing page for my father's freight services</a></li>
     <li><a href="https://github.com/KeysiJones/Instipoa">Instipoa | Web app created to make access to religious institute classes easier</a></li>
