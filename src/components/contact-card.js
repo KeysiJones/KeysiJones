@@ -20,9 +20,7 @@ function ContactCard({ footer }) {
     >
       <div
         className={`p-2 ${
-          theme.darkMode
-            ? "bg-gray-700 text-green-400"
-            : "bg-green-500 text-white"
+          theme.darkMode ? " text-green-400" : "bg-green-500 text-white"
         } ${
           footer ? "" : "rounded-xl"
         } font-bold text-5xl lg:text-6xl flex justify-center`}

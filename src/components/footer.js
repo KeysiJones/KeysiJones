@@ -15,9 +15,7 @@ function Footer() {
       </p>
       <footer
         className={`${
-          theme.darkMode
-            ? "text-white bg-gray-700"
-            : "text-gray-700 border-gray-700"
+          theme.darkMode ? "text-white" : "text-gray-700 border-gray-700"
         } text-center text-xl`}
       >
         <ContactCard footer={true} />
