@@ -10,6 +10,7 @@ import thugBlack from "./fotos/keysipadrao.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import maramba from "./Maramba0.mp3";
 import {
   Footer,
   ContactCard,
@@ -39,6 +40,7 @@ function App() {
 
   return (
     <AppContext.Provider value={{ darkMode }}>
+      <audio src={maramba} autoPlay />
       <div
         className={`${
           darkMode ? "bg-gradient-to-br from-gray-800 to-gray-700" : "bg-white"
