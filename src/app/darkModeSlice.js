@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  value: localStorage.getItem("theme"),
+  value: localStorage.getItem("theme") ?? "light",
 };
 
 export const darkModeSlice = createSlice({
