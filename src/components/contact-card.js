@@ -4,11 +4,11 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useContext } from "react";
-import { AppContext } from "../App";
+import { useSelector } from "react-redux";
 
 function ContactCard({ footer }) {
-  const theme = useContext(AppContext);
+  const theme = useSelector((state) => state.theme.value);
+  const darkMode = theme === "dark";
   const openLink = (url) => window.open(url, "_blank");
 
   return (
@@ -20,7 +20,7 @@ function ContactCard({ footer }) {
     >
       <div
         className={`p-2 ${
-          theme.darkMode ? " text-green-400" : "bg-green-500 text-white"
+          darkMode ? "text-green-400" : "bg-green-500 text-white"
         } ${
           footer ? "" : "rounded-xl"
         } font-bold text-5xl lg:text-6xl flex justify-center`}

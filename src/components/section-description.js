@@ -1,12 +1,13 @@
-import { useContext } from "react";
-import { AppContext } from "../App";
+import { useSelector } from "react-redux";
+
 function SectionDescription({ description }) {
-  const theme = useContext(AppContext);
+  const theme = useSelector((state) => state.theme.value);
+  const darkMode = theme === "dark";
 
   return (
     <p
       className={`${
-        theme.darkMode ? "text-white" : "text-gray-700"
+        darkMode ? "text-white" : "text-gray-700"
       } text-center text-3xl sm:mx-16`}
     >
       {description}
