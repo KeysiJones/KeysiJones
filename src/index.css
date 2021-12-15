@@ -84,7 +84,8 @@ code {
     flex-direction: column;
   }
 
-  div#meus-projetos {
+  div#meus-projetos,
+  div.meus-projetos {
     display: flex;
     gap: 34px;
     @apply my-auto mx-8;
@@ -92,11 +93,11 @@ code {
 
   div#meus-projetos > div.project-item {
     @apply flex flex-col justify-between;
-    transform: rotate(3deg);
+    transform: scale(0.9);
   }
 
   div#meus-projetos > div.project-item:hover {
-    transform: scale(0.9) rotate(0deg);
+    transform: scale(1) rotate(0deg);
     transition: all 0.2s ease-in;
     cursor: ne-resizer;
   }
@@ -115,8 +116,12 @@ code {
 @media (min-width: 1200px) {
   div#meus-projetos {
     display: flex;
-    gap: 34px;
-    @apply my-8;
+    gap: 30px;
+    @apply my-2;
+  }
+
+  div#meus-projetos > div > img {
+    width: 60vw;
   }
 }
 

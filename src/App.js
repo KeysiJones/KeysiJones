@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Splide from "@splidejs/splide";
 import "@splidejs/splide/dist/css/splide.min.css";
 import thugBlack from "./fotos/keysipadrao.png";
+import blogPicture from "./fotos/blog.png";
 import React from "react";
 import {
   Footer,
@@ -154,7 +155,7 @@ function App() {
                   classes."
             />
           </Carrousel>
-          <div id="meus-projetos" className="mx-4 my-8">
+          <div id="meus-projetos">
             <RegularCard
               image={jccarretos}
               openLink={openLink}
@@ -168,6 +169,16 @@ function App() {
               description="Instipoa is an web app made to make the access to our Institute
               classes easy."
             />
+          </div>
+          <div id="meus-projetos">
+            <RegularCard
+              hasBorder
+              image={blogPicture}
+              openLink={openLink}
+              link="https://keysijones-blog.vercel.app"
+              description="My personal blog to write about tech, check it out."
+            />
+
             <RegularCard
               hasBorder
               image={institutoAdmin}
