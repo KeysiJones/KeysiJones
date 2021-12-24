@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { ContactCard, SectionDescription, SectionTitle } from "./";
 import { ThemeSwitcher } from "./theme-switcher";
-import thugBlack from "../fotos/keysipadrao.png";
+import thugBlack from "../fotos/cropped-temple-photo.jpg";
 
 function AboutMe() {
   const theme = useSelector((state) => state.theme.value);
@@ -25,6 +25,8 @@ function AboutMe() {
             } rounded-full`}
             alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
             src={thugBlack}
+            width={300}
+            height={300}
           />
         </div>
         <div className="flex flex-col self-center m-auto">
