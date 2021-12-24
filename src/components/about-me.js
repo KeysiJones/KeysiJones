@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { ContactCard, SectionDescription, SectionTitle } from "./";
 import { ThemeSwitcher } from "./theme-switcher";
-import thugBlack from "../fotos/cropped-temple-photo.jpg";
+import thugBlack from "../fotos/cropped-keysi.jpeg";
 
 function AboutMe() {
   const theme = useSelector((state) => state.theme.value);
