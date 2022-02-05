@@ -1,8 +1,6 @@
 import Switch from "react-switch";
 import { useSelector, useDispatch } from "react-redux";
 import { switchDarkMode } from "../app/darkModeSlice";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 function ThemeSwitcher() {
   const theme = useSelector((state) => state.theme.value);
