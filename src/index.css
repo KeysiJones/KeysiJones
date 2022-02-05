@@ -106,12 +106,6 @@ code {
   }
 }
 
-@media (min-width: 759px) and (max-width: 1200px) {
-  /* div#aboutme img#thug {
-    width: 50%;
-  } */
-}
-
 @media (min-width: 1200px) {
   div#meus-projetos {
     display: flex;
