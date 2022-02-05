@@ -19,15 +19,7 @@ function ThemeSwitcher() {
         checked={darkMode}
         onColor="#374151"
         offColor="#374151"
-        uncheckedIcon={
-          <FontAwesomeIcon
-            icon={faMoon}
-            size="1x"
-            className="ml-1 mb-0.5 text-white"
-          />
-        }
         className="text-yellow-400 text-2xl"
-        checkedIcon={<FontAwesomeIcon icon={faSun} size="1x" />}
         onHandleColor="#34D399"
       />
     </label>

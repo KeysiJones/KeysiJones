@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { ContactCard, SectionDescription, SectionTitle } from "./";
 import { ThemeSwitcher } from "./theme-switcher";
-import thugBlack from "../fotos/cropped-keysi.jpeg";
+import thugBlack from "../fotos/cropped-keysi.jpg";
 
 function AboutMe() {
   const theme = useSelector((state) => state.theme.value);
@@ -35,7 +35,7 @@ function AboutMe() {
           </div>
           <div id="myinfo" className="rounded-3xl">
             <div>
-              <h1 className="font-semibold text-center text-5xl md:text-7xl mx-auto">
+              <h1 className="font-semibold text-center text-4xl md:text-6xl mx-auto">
                 {window.innerWidth < 452 ? (
                   <span
                     className={`${darkMode ? "text-white" : "text-gray-700"}`}
@@ -68,7 +68,7 @@ function AboutMe() {
               <p
                 className={`${
                   darkMode ? "text-white" : "text-gray-700"
-                } text-center font-semibold text-3xl lg:text-5xl mx-2 mt-2`}
+                } text-center font-semibold text-2xl lg:text-5xl mx-2 mt-2`}
               >
                 <span>Frontend</span> Developer
               </p>

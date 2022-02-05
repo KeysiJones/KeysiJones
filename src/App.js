@@ -63,6 +63,12 @@ function App() {
               description="Instituto admin was developed to administrate Instipoa's
                   classes."
             />
+           <CarrouselCard
+              link="https://keysijones-blog.vercel.app/"
+              openLink={openLink}
+              cardImage={blogPicture}
+              description="My personal blog to write about tech, check it out."
+            />
           </Carrousel>
           <div id="meus-projetos">
             <RegularCard
@@ -78,8 +84,6 @@ function App() {
               description="Instipoa is an web app made to make the access to our Institute
               classes easy."
             />
-          </div>
-          <div id="meus-projetos">
             <RegularCard
               hasBorder
               image={blogPicture}

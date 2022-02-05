@@ -53,6 +53,7 @@ img#thug {
   -webkit-animation: cubic-bezier(0.22, 0.61, 0.36, 1);
   animation-name: from_left_to_right;
   animation-duration: 1.3s;
+  max-width: 90%;
 }
 
 body {
@@ -93,11 +94,9 @@ code {
 
   div#meus-projetos > div.project-item {
     @apply flex flex-col justify-between;
-    transform: scale(0.9);
   }
 
   div#meus-projetos > div.project-item:hover {
-    transform: scale(1) rotate(0deg);
     transition: all 0.2s ease-in;
     cursor: ne-resizer;
   }
@@ -144,7 +143,7 @@ code {
 
   img#thug {
     @apply mx-auto my-8;
-    width: 70%;
+    width: 60%;
   }
 }
 
