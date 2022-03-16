@@ -21,7 +21,7 @@ interfaces, innovate, help others, solve problems and make
 people's lives easier. It's nice to meet you !
 <br/>
 <br/>
-Areas of Expertise/Interest: Frontend Development & UI-UX Designing.
+Areas of Expertise/Interest: Frontend Development, Backend Development (Node) and UI-UX Designing.
 
 <h3>
   Skills 💼
