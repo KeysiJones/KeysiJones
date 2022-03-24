@@ -18,16 +18,14 @@ function RegularCard({ image, openLink, link, description }) {
       <div className="text-center">
         <button
           onClick={() => openLink(link)}
-          className={`p-4 m-auto ${
+          className={`p-4 ${
             darkMode
-              ? "bg-gray-800 hover:bg-yellow-500"
-              : "hover:bg-gray-800 bg-yellow-500"
+              ? "bg-gray-800 hover:bg-yellow-400 text-yellow-400 hover:text-gray-800"
+              : "hover:bg-gray-800 bg-yellow-400 text-white"
           }  rounded-b-md w-full`}
         >
           <p
-            className={`font-bold text-3xl ${
-              darkMode ? "text-white" : "text-white"
-            }`}
+            className={`font-bold text-3xl`}
           >
             Live demo
           </p>

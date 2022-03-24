@@ -43,7 +43,7 @@ function AboutMe() {
                     Hi, i'm{" "}
                     <span
                       className={`${
-                        darkMode ? "text-yellow-400" : "text-yellow-500"
+                        darkMode ? "text-yellow-400" : "text-yellow-400"
                       }`}
                     >
                       Keysi
@@ -56,7 +56,7 @@ function AboutMe() {
                     Hi, i'm{" "}
                     <span
                       className={`${
-                        darkMode ? "text-yellow-400" : "text-yellow-500"
+                        darkMode ? "text-yellow-400" : "text-yellow-400"
                       }`}
                     >
                       Keysi Jones
@@ -70,7 +70,7 @@ function AboutMe() {
                   darkMode ? "text-white" : "text-gray-700"
                 } text-center font-semibold text-2xl lg:text-5xl mx-2 mt-2`}
               >
-                <span>Frontend</span> Developer
+                <span>Fullstack Javascript</span> Developer
               </p>
             </div>
             {window.innerWidth > 452 ? <ContactCard /> : null}

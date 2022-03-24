@@ -20,7 +20,7 @@ function CarrouselCard({ cardImage, link, description, openLink }) {
             className={`p-4 m-auto ${
               darkMode
                 ? "bg-gray-700 text-yellow-400"
-                : "bg-yellow-500 text-white"
+                : "bg-yellow-400 text-white"
             }  rounded-b-xl w-full`}
           >
             <p className="font-bold text-4xl mb-4">Live demo</p>
