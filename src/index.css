@@ -76,7 +76,7 @@ code {
   }
   div#aboutme {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   div#aboutme div#myinfo {
@@ -88,12 +88,12 @@ code {
   div#meus-projetos,
   div.meus-projetos {
     display: flex;
-    gap: 34px;
-    @apply my-auto mx-8;
+    @apply my-auto;
   }
 
   div#meus-projetos > div.project-item {
     @apply flex flex-col justify-between;
+    width: fit-content;
   }
 
   div#meus-projetos > div.project-item:hover {
@@ -109,12 +109,22 @@ code {
 @media (min-width: 1200px) {
   div#meus-projetos {
     display: flex;
-    gap: 30px;
     @apply my-2;
+    @apply justify-evenly;
   }
 
   div#meus-projetos > div > img {
     width: 60vw;
+  }
+
+  div#meus-projetos > div.project-item {
+    width: 30vw;
+  }
+
+  div#aboutme {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
   }
 }
 

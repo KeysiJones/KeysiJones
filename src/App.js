@@ -29,6 +29,7 @@ function App() {
 
   return (
     <div
+    style={{minWidth: '412px'}}
       className={`${
         darkMode ? "bg-gradient-to-br from-gray-800 to-gray-700" : "bg-gray-100"
       } h-screen`}
@@ -42,7 +43,7 @@ function App() {
       >
         <div className="blink">
           <AboutMe />
-          <SectionTitle title="My projects" />
+          <SectionTitle title="Some personal projects" />
           <Carrousel>
             <CarrouselCard
               link="https://jccarretos.vercel.app/"
@@ -86,8 +87,10 @@ function App() {
               description="Instipoa is an web app made to make the access to our Institute
               classes easy."
             />
-            <RegularCard
-              hasBorder
+            
+          </div>
+          <div id="meus-projetos">
+          <RegularCard
               image={blogPicture}
               openLink={openLink}
               link="https://keysijones-blog.vercel.app"
@@ -95,7 +98,6 @@ function App() {
             />
 
             <RegularCard
-              hasBorder
               image={institutoAdmin}
               openLink={openLink}
               link="https://instituto-admin.vercel.app"

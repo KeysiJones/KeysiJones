@@ -9,7 +9,7 @@ function AboutMe() {
   return (
     <div>
       <div
-        className="flex flex-col md:flex-row gap-1 sm:mt-12 sm:mb-32"
+        className="flex flex-col lg:flex-row gap-1 sm:my-12"
         id="aboutme"
       >
         <div className="self-center mb-4" id="switch-small">
@@ -29,7 +29,7 @@ function AboutMe() {
             height={300}
           />
         </div>
-        <div className="flex flex-col self-center m-auto">
+        <div className="flex flex-col self-center m-auto sm:mt-12">
           <div className="self-center mb-4" id="switch-big">
             <ThemeSwitcher />
           </div>
@@ -77,7 +77,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row m-auto mx-4 sm:mx-8 items-center gap-1 sm:my-32">
+      <div className="flex flex-col 2xl:flex-row m-auto mx-8 sm:mx-12 items-center gap-1 sm:my-12 lg:my-32">
         <div>
           <SectionTitle title="About me" />
           <SectionDescription

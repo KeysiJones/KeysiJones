@@ -1,13 +1,11 @@
 import { useSelector } from "react-redux";
 
-function RegularCard({ image, openLink, link, description, hasBorder }) {
+function RegularCard({ image, openLink, link, description }) {
   const theme = useSelector((state) => state.theme.value);
   const darkMode = theme === "dark";
   return (
     <div
-      className={`mb-8 mx-8 my-8 bg-white rounded-b-xl rounded-t-xl project-item ${
-        !darkMode && hasBorder ? "border-t-4 border-yellow-500" : null
-      }`}
+      className={`mb-8 mx-8 my-8 bg-white rounded-b-xl rounded-t-xl project-item`}
     >
       <img className="rounded-t-xl" alt="project" src={image} />
       <h3
