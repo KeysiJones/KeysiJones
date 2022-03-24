@@ -1,7 +1,7 @@
 import "./App.css";
-import institutoAdmin from "./fotos/instituto-admin.png";
-import instipoa from "./fotos/instipoa.png";
-import jccarretos from "./fotos/jccarretos.png";
+import institutoAdmin from "./fotos/instituto-admin.PNG";
+import instipoa from "./fotos/instipoa.PNG";
+import quiz from "./fotos/quiz.PNG"
 import { useEffect } from "react";
 import Splide from "@splidejs/splide";
 import "@splidejs/splide/dist/css/splide.min.css";
@@ -46,11 +46,16 @@ function App() {
           <SectionTitle title="Some personal projects" />
           <Carrousel>
             <CarrouselCard
-              link="https://jccarretos.vercel.app/"
+              link="https://keysijones-blog.vercel.app/"
               openLink={openLink}
-              cardImage={jccarretos}
-              description="JC Carretos is a website made to spread my father's
-                      freight services."
+              cardImage={blogPicture}
+              description="My personal blog to write about tech, check it out."
+            />
+            <CarrouselCard
+              link="https://keysi-quiz.vercel.app/"
+              openLink={openLink}
+              cardImage={quiz}
+              description="This is a quiz app i made with React."
             />
             <CarrouselCard
               link="https://instituto-helper.netlify.app/"
@@ -66,19 +71,13 @@ function App() {
               description="Instituto admin was developed to administrate Instipoa's
                   classes."
             />
-            <CarrouselCard
-              link="https://keysijones-blog.vercel.app/"
-              openLink={openLink}
-              cardImage={blogPicture}
-              description="My personal blog to write about tech, check it out."
-            />
           </Carrousel>
           <div id="meus-projetos">
             <RegularCard
-              image={jccarretos}
+              image={blogPicture}
               openLink={openLink}
-              link="https://jccarretos.vercel.app"
-              description="JC Carretos is a website made to help my father's freight business"
+              link="https://keysijones-blog.vercel.app"
+              description="My personal blog to write about tech, check it out."
             />
             <RegularCard
               image={instipoa}
@@ -87,16 +86,14 @@ function App() {
               description="Instipoa is an web app made to make the access to our Institute
               classes easy."
             />
-            
           </div>
           <div id="meus-projetos">
-          <RegularCard
-              image={blogPicture}
+            <RegularCard
+              image={quiz}
               openLink={openLink}
-              link="https://keysijones-blog.vercel.app"
-              description="My personal blog to write about tech, check it out."
+              link="https://keysi-quiz.vercel.app"
+              description="This is a quiz app i made with React."
             />
-
             <RegularCard
               image={institutoAdmin}
               openLink={openLink}

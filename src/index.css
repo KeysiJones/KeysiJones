@@ -29,6 +29,10 @@ button {
   @apply bg-gray-500;
 } */
 
+div.project-item {
+  box-shadow: -9px 16px 15px 5px #a9a9a9
+}
+
 @keyframes from_left_to_right {
   0% {
     transform: scale(0.5);
