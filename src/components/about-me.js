@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { ContactCard, SectionDescription, SectionTitle } from "./";
 import { ThemeSwitcher } from "./theme-switcher";
-import thugBlack from "../fotos/cropped-keysi.jpg";
+import thugBlack from "../fotos/cropped-keysi.jpeg";
 
 function AboutMe() {
   const theme = useSelector((state) => state.theme.value);
@@ -20,8 +20,8 @@ function AboutMe() {
             id="thug"
             className={`mt-8 ${
               darkMode
-                ? "bg-gradient-to-br from-green-400 to-cyan-500"
-                : "bg-gradient-to-br from-green-400 to-green-300"
+                ? "bg-gradient-to-br from-yellow-400 to-cyan-500"
+                : "bg-gradient-to-br from-yellow-400 to-yellow-300"
             } rounded-full`}
             alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
             src={thugBlack}
@@ -43,7 +43,7 @@ function AboutMe() {
                     Hi, i'm{" "}
                     <span
                       className={`${
-                        darkMode ? "text-green-400" : "text-green-500"
+                        darkMode ? "text-yellow-400" : "text-yellow-500"
                       }`}
                     >
                       Keysi
@@ -56,7 +56,7 @@ function AboutMe() {
                     Hi, i'm{" "}
                     <span
                       className={`${
-                        darkMode ? "text-green-400" : "text-green-500"
+                        darkMode ? "text-yellow-400" : "text-yellow-500"
                       }`}
                     >
                       Keysi Jones

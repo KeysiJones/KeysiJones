@@ -30,12 +30,14 @@ function App() {
   return (
     <div
       className={`${
-        darkMode ? "bg-gradient-to-br from-gray-800 to-gray-700" : "bg-white"
+        darkMode ? "bg-gradient-to-br from-gray-800 to-gray-700" : "bg-gray-100"
       } h-screen`}
     >
       <div
         className={`${
-          darkMode ? "bg-gradient-to-br from-gray-800 to-gray-700" : "bg-white"
+          darkMode
+            ? "bg-gradient-to-br from-gray-800 to-gray-700"
+            : "bg-gray-100"
         } py-2`}
       >
         <div className="blink">
@@ -63,7 +65,7 @@ function App() {
               description="Instituto admin was developed to administrate Instipoa's
                   classes."
             />
-           <CarrouselCard
+            <CarrouselCard
               link="https://keysijones-blog.vercel.app/"
               openLink={openLink}
               cardImage={blogPicture}

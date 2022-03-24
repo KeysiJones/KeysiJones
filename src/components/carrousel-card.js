@@ -10,7 +10,7 @@ function CarrouselCard({ cardImage, link, description, openLink }) {
         <h3
           className={`text-2xl ${
             darkMode ? "text-gray-600" : "text-gray-700"
-            } text-center pb-4 m-2 font-semibold`}
+          } text-center pb-4 m-2 font-semibold`}
         >
           {description}
         </h3>
@@ -19,9 +19,9 @@ function CarrouselCard({ cardImage, link, description, openLink }) {
             onClick={() => openLink(link)}
             className={`p-4 m-auto ${
               darkMode
-                ? "bg-gray-700 text-green-400"
-                : "bg-green-500 text-white"
-              }  rounded-b-xl w-full`}
+                ? "bg-gray-700 text-yellow-400"
+                : "bg-yellow-500 text-white"
+            }  rounded-b-xl w-full`}
           >
             <p className="font-bold text-4xl mb-4">Live demo</p>
           </button>

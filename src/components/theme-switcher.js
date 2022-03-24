@@ -18,7 +18,9 @@ function ThemeSwitcher() {
         onColor="#374151"
         offColor="#374151"
         className="text-yellow-400 text-2xl"
-        onHandleColor="#34D399"
+        onHandleColor="#FBBF24"
+        checkedIcon={null}
+        uncheckedIcon={null}
       />
     </label>
   );
