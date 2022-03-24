@@ -137,7 +137,8 @@ code {
     display: none;
   }
   div.splide {
-    @apply mx-auto mt-8;
+    @apply mx-auto mt-8 rounded-2xl;
+    box-shadow: -9px 16px 15px 5px #a9a9a9;
     width: 90%;
   }
 

@@ -43,7 +43,7 @@ function App() {
       >
         <div className="blink">
           <AboutMe />
-          <SectionTitle title="Some personal projects" />
+          <SectionTitle title="Personal projects" />
           <Carrousel>
             <CarrouselCard
               link="https://keysijones-blog.vercel.app/"
