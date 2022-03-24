@@ -1,7 +1,7 @@
 import "./App.css";
-import institutoAdmin from "./fotos/instituto-admin.PNG";
-import instipoa from "./fotos/instipoa.PNG";
-import quiz from "./fotos/quiz.PNG"
+import institutoAdmin from "./fotos/instituto-admin.jpg";
+import instipoa from "./fotos/instipoa.jpg";
+import quiz from "./fotos/quiz.jpg"
 import { useEffect } from "react";
 import Splide from "@splidejs/splide";
 import "@splidejs/splide/dist/css/splide.min.css";
