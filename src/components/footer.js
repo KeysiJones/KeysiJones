@@ -2,8 +2,10 @@ import { useSelector } from "react-redux";
 import { ContactCard } from "./contact-card";
 
 function Footer() {
-  const theme = useSelector((state) => state.theme.value);
+  const currentYear = new Date().getFullYear();
+  const theme = useSelector((state) => state.portfolio.theme);
   const darkMode = theme === "dark";
+
   return (
     <div>
       <p
@@ -11,7 +13,7 @@ function Footer() {
           darkMode ? "text-white" : "text-gray-700"
         } text-3xl font-bold mb-2`}
       >
-        Follow me at
+        Social media
       </p>
       <footer
         className={`${
@@ -25,7 +27,7 @@ function Footer() {
           darkMode ? "text-white" : "text-gray-700 border-gray-700"
         } text-center text-xl`}
       >
-        &copy; {new Date().getFullYear()} Keysi Jones. All rights reserved
+        &copy; {currentYear} - Keysi Jones. All rights reserved
       </p>
     </div>
   );
