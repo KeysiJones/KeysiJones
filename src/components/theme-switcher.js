@@ -5,7 +5,7 @@ import { switchTheme } from "../app/darkModeSlice";
 function ThemeSwitcher() {
   const dispatch = useDispatch();
 
-  const switchOnColor = "#374151"; //Dark gray color
+  const switchBackgroundColor = "#374151"; //Dark gray color
   const switchOnHandleColor = "#FBBF24"; //Gold yellow color
   const theme = useSelector((state) => state.portfolio.theme);
   const darkMode = theme === "dark";
@@ -19,8 +19,8 @@ function ThemeSwitcher() {
           dispatch(switchTheme());
         }}
         checked={darkMode}
-        onColor={switchOnColor}
-        offColor={switchOnColor}
+        onColor={switchBackgroundColor}
+        offColor={switchBackgroundColor}
         className={switchClass}
         onHandleColor={switchOnHandleColor}
         checkedIcon={null}
