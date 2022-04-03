@@ -1,24 +1,28 @@
 import Switch from "react-switch";
 import { useSelector, useDispatch } from "react-redux";
-import { switchDarkMode } from "../app/darkModeSlice";
+import { switchTheme } from "../app/darkModeSlice";
 
 function ThemeSwitcher() {
-  const theme = useSelector((state) => state.theme.value);
   const dispatch = useDispatch();
+
+  const switchOnColor = "#374151"; //Dark gray color
+  const switchOnHandleColor = "#FBBF24"; //Gold yellow color
+  const theme = useSelector((state) => state.portfolio.theme);
   const darkMode = theme === "dark";
+  const switchClass = "text-yellow-400 text-2xl"
 
   return (
     <label className="text-right m-auto text-sm">
       <Switch
         onChange={() => {
           localStorage.setItem("theme", darkMode ? "light" : "dark");
-          dispatch(switchDarkMode());
+          dispatch(switchTheme());
         }}
         checked={darkMode}
-        onColor="#374151"
-        offColor="#374151"
-        className="text-yellow-400 text-2xl"
-        onHandleColor="#FBBF24"
+        onColor={switchOnColor}
+        offColor={switchOnColor}
+        className={switchClass}
+        onHandleColor={switchOnHandleColor}
         checkedIcon={null}
         uncheckedIcon={null}
       />
