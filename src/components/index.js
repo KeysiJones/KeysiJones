@@ -1,3 +1,4 @@
+export * from "./about-me";
 export * from "./carrousel";
 export * from "./carrousel-card";
 export * from "./contact-card";

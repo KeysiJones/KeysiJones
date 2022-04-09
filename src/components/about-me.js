@@ -8,11 +8,8 @@ function AboutMe() {
   const darkMode = theme === "dark";
   return (
     <div>
-      <div
-        className="flex flex-col lg:flex-row gap-1 sm:my-12"
-        id="aboutme"
-      >
-        <div className="self-center mb-4" id="switch-small">
+      <div className="flex flex-col lg:flex-row gap-1 sm:my-12" id="aboutme">
+        <div className="self-end mb-4 mr-8" id="switch-small">
           <ThemeSwitcher />
         </div>
         <div className="mx-auto">
@@ -25,17 +22,14 @@ function AboutMe() {
             } rounded-full`}
             alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
             src={thugBlack}
-            width={300}
-            height={300}
+            width={150}
+            height={150}
           />
         </div>
         <div className="flex flex-col self-center m-auto sm:mt-12">
-          <div className="self-center mb-4" id="switch-big">
-            <ThemeSwitcher />
-          </div>
           <div id="myinfo" className="rounded-3xl">
             <div>
-              <h1 className="font-semibold text-center text-4xl md:text-6xl mx-auto">
+              <h1 className="font-semibold text-center text-3xl md:text-4xl mx-auto">
                 {window.innerWidth < 452 ? (
                   <span
                     className={`${darkMode ? "text-white" : "text-gray-700"}`}
@@ -68,12 +62,12 @@ function AboutMe() {
               <p
                 className={`${
                   darkMode ? "text-white" : "text-gray-700"
-                } text-center font-semibold text-2xl lg:text-5xl mx-2 mt-2`}
+                } text-center font-semibold text-2xl lg:text-4xl mx-2 mt-2`}
               >
-                <span>Fullstack Javascript</span> Developer
+                <span>Fullstack Javascript</span> Engineer (MERN)
               </p>
             </div>
-            {window.innerWidth > 452 ? <ContactCard /> : null}
+            {window.innerWidth >= 375 ? <ContactCard /> : null}
           </div>
         </div>
       </div>

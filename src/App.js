@@ -1,7 +1,7 @@
 import "./App.css";
 import institutoAdmin from "./fotos/instituto-admin.jpg";
 import instipoa from "./fotos/instipoa.jpg";
-import quiz from "./fotos/quiz.jpg"
+import quiz from "./fotos/quiz.jpg";
 import { useEffect } from "react";
 import Splide from "@splidejs/splide";
 import "@splidejs/splide/dist/css/splide.min.css";
@@ -15,7 +15,7 @@ import {
   RegularCard,
 } from "./components";
 import { useSelector } from "react-redux";
-import { AboutMe } from "./components/about-me";
+import { AboutMe } from "./components";
 
 const openLink = (url) => window.open(url, "_blank");
 
@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div
-    style={{minWidth: '412px'}}
+      style={{ minWidth: "412px" }}
       className={`${
         darkMode ? "bg-gradient-to-br from-gray-800 to-gray-700" : "bg-gray-100"
       } h-screen`}

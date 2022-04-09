@@ -19,9 +19,7 @@ function ContactCard({ footer }) {
       } flex mt-8 mb-4 flex-col text-center justify-center 1s`}
     >
       <div
-        className={`p-2 ${
-          darkMode ? "text-yellow-400" : "text-yellow-400"
-        } ${
+        className={`p-2 ${darkMode ? "text-yellow-400" : "text-yellow-400"} ${
           footer ? "" : "rounded-xl"
         } font-bold text-5xl lg:text-6xl flex justify-center`}
       >
@@ -29,19 +27,19 @@ function ContactCard({ footer }) {
           onClick={() => openLink("https://www.linkedin.com/in/keysijones/")}
           className="mx-8 text-blue-500"
         >
-          <FontAwesomeIcon icon={faLinkedin} size="1x" />
+          <FontAwesomeIcon icon={faLinkedin} size="sm" />
         </button>
         <button
           onClick={() => openLink("https://github.com/KeysiJones")}
-          className={`mx-8 ${darkMode ? 'text-white' : 'text-gray-700'}`}
+          className={`mx-8 ${darkMode ? "text-white" : "text-gray-700"}`}
         >
-          <FontAwesomeIcon icon={faGithub} size="1x" />
+          <FontAwesomeIcon icon={faGithub} size="sm" />
         </button>
         <button
           onClick={() => openLink("https://twitter.com/keysi_jones")}
           className="mx-8 text-blue-400"
         >
-          <FontAwesomeIcon icon={faTwitter} size="1x" />
+          <FontAwesomeIcon icon={faTwitter} size="sm" />
         </button>
       </div>
     </div>
