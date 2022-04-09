@@ -75,17 +75,17 @@ function AboutMe() {
         <div>
           <SectionTitle title="About me" />
           <SectionDescription
-            description="I'm a software engineer that likes to create beautiful
-                interfaces, innovate, help others, solve problems and make
-                people's lives easier."
+            description="I'm a trilingual Fullstack Javascript engineer specializing in React 
+            and Node.JS with a passion for building easy-to-use innovative applications that 
+            make people's lives easier."
           />
         </div>
         <div>
           <SectionTitle title="Hobbies" />
           <SectionDescription
-            description="In my free time, I like to go out with my wife, watch movies,
-                chat with people on Discord to improve my English, walk my dog
-                Maya and create software."
+            description="In my free time i like to go out with my wife, listen 
+            to personal development podcasts, go to the gym and create personal 
+            projects to improve my coding skills."
           />
         </div>
       </div>

@@ -44,8 +44,8 @@ function ContactCard({ footer, icons }) {
           </div>
         ) : (
           <div className="self-center flex p-2 justify-evenly w-full">
-            <FaReact size={60} color="#61DBFB" id="react-logo" />
-            <FaNodeJs size={60} color="#50b148" />
+            <FaReact size={65} color="#61DBFB" id="react-logo" />
+            <FaNodeJs size={65} color="#50b148" />
           </div>
         )}
       </div>
