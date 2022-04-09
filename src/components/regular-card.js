@@ -24,11 +24,7 @@ function RegularCard({ image, openLink, link, description }) {
               : "hover:bg-gray-800 bg-yellow-400 text-white"
           }  rounded-b-md w-full`}
         >
-          <p
-            className={`font-bold text-3xl`}
-          >
-            Live demo
-          </p>
+          <p className={`font-bold text-3xl`}>Live demo</p>
         </button>
       </div>
     </div>

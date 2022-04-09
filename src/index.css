@@ -131,7 +131,7 @@ code {
 
 @media (max-width: 758px) {
   div.splide {
-    @apply mx-auto mt-8 rounded-2xl;
+    @apply mx-auto mt-8 rounded-sm;
     box-shadow: -9px 16px 15px 5px #a9a9a9;
     width: 85vw;
   }
@@ -178,7 +178,7 @@ svg#react-logo {
 }
 
 div.splide__track {
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 @keyframes spin {
