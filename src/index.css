@@ -175,6 +175,21 @@ code {
   background-color: #FBBF24; 
 }
 
+svg#react-logo {
+  animation: spin 4s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(-360deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
 /* 
 320px — 480px: Mobile devices
 481px — 768px: iPads, Tablets
