@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useSelector } from "react-redux";
 
 function ContactCard({ footer }) {
-  const theme = useSelector((state) => state.theme.value);
+  const theme = useSelector((state) => state.portfolio.theme);
   const darkMode = theme === "dark";
   const openLink = (url) => window.open(url, "_blank");
 

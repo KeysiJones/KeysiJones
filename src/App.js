@@ -1,26 +1,34 @@
-import "./App.css";
-import institutoAdmin from "./fotos/instituto-admin.jpg";
-import instipoa from "./fotos/instipoa.jpg";
-import quiz from "./fotos/quiz.jpg";
+//Libs
 import { useEffect } from "react";
 import Splide from "@splidejs/splide";
 import "@splidejs/splide/dist/css/splide.min.css";
-import blogPicture from "./fotos/blog.png";
 import React from "react";
+import { useSelector } from "react-redux";
+
+//Custom components
 import {
-  Footer,
+  AboutMe,
   Carrousel,
   CarrouselCard,
-  SectionTitle,
+  Footer,
   RegularCard,
+  SectionTitle,
 } from "./components";
-import { useSelector } from "react-redux";
-import { AboutMe } from "./components";
+
+//Styles
+import "./App.css";
+import "./App.css";
+
+//Project pictures
+import blogPicture from "./fotos/blog.png";
+import institutoAdmin from "./fotos/instituto-admin.jpg";
+import instipoa from "./fotos/instipoa.jpg";
+import quiz from "./fotos/quiz.jpg";
 
 const openLink = (url) => window.open(url, "_blank");
 
 function App() {
-  const theme = useSelector((state) => state.theme.value);
+  const theme = useSelector((state) => state.portfolio.theme);
   const darkMode = theme === "dark";
 
   useEffect(() => {

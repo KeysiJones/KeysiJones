@@ -1,21 +1,21 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  value: localStorage.getItem("theme") ?? "light",
+  theme: localStorage.getItem("theme") ?? "light",
 };
 
 export const darkModeSlice = createSlice({
-  name: "theme",
+  name: "portfolio",
   initialState,
   reducers: {
-    switchDarkMode: (state) => {
-      state.value === "light"
-        ? (state.value = "dark")
-        : (state.value = "light");
+    switchTheme: (state) => {
+      state.theme === "light"
+        ? (state.theme = "dark")
+        : (state.theme = "light");
     },
   },
 });
 
-export const { switchDarkMode } = darkModeSlice.actions;
+export const { switchTheme } = darkModeSlice.actions;
 
 export default darkModeSlice.reducer;

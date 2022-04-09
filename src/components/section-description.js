@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 
 function SectionDescription({ description }) {
-  const theme = useSelector((state) => state.theme.value);
+  const theme = useSelector((state) => state.portfolio.theme);
   const darkMode = theme === "dark";
 
   return (
