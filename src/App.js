@@ -31,21 +31,17 @@ function App() {
   const theme = useSelector((state) => state.portfolio.theme);
   const darkMode = theme === "dark";
 
-  useEffect(() => {
-    new Splide(".splide").mount();
-  }, []);
-
   return (
     <div
       style={{ minWidth: "412px" }}
       className={`${
-        darkMode ? "bg-gradient-to-br from-gray-800 to-gray-700" : "bg-gray-100"
+        darkMode ? "bg-gray-800" : "bg-gray-100"
       } h-screen`}
     >
       <div
         className={`${
           darkMode
-            ? "bg-gradient-to-br from-gray-800 to-gray-700"
+            ? "bg-gray-800"
             : "bg-gray-100"
         } py-2`}
       >
@@ -80,36 +76,6 @@ function App() {
                   classes."
             />
           </Carrousel>
-          <div id="meus-projetos">
-            <RegularCard
-              image={blogPicture}
-              openLink={openLink}
-              link="https://keysijones-blog.vercel.app"
-              description="My personal blog to write about tech, check it out."
-            />
-            <RegularCard
-              image={instipoa}
-              openLink={openLink}
-              link="https://instituto-helper.netlify.app"
-              description="Instipoa is an web app made to make the access to our Institute
-              classes easy."
-            />
-          </div>
-          <div id="meus-projetos">
-            <RegularCard
-              image={quiz}
-              openLink={openLink}
-              link="https://keysi-quiz.vercel.app"
-              description="This is a quiz app i made with React."
-            />
-            <RegularCard
-              image={institutoAdmin}
-              openLink={openLink}
-              link="https://instituto-admin.vercel.app"
-              description="Instituto admin was developed to administrate Instipoa's
-              classes."
-            />
-          </div>
           <Footer />
         </div>
       </div>

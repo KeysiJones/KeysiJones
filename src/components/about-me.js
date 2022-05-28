@@ -1,11 +1,13 @@
 import { useSelector } from "react-redux";
 import { ContactCard, SectionDescription, SectionTitle } from "./";
 import { ThemeSwitcher } from "./theme-switcher";
-import profilePicture from "../fotos/keysi-blue.jpg";
 
 function AboutMe() {
   const theme = useSelector((state) => state.portfolio.theme);
   const darkMode = theme === "dark";
+  const GRAVATAR_HASH = process.env.REACT_APP_GRAVATAR_HASH;
+  const avatarImagePath = `https://www.gravatar.com/avatar/${GRAVATAR_HASH}`;
+
   return (
     <div>
       <div className="flex flex-col lg:flex-row gap-1 sm:my-12" id="aboutme">
@@ -21,9 +23,7 @@ function AboutMe() {
                 : "bg-gradient-to-br from-yellow-400 to-yellow-300"
             } rounded-full`}
             alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
-            src={profilePicture}
-            width={150}
-            height={150}
+            src={avatarImagePath}
           />
         </div>
         <div className="flex flex-col self-center m-auto sm:mt-12">

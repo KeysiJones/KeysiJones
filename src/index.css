@@ -29,6 +29,14 @@ button {
   @apply bg-gray-500;
 } */
 
+.glider {
+  margin-bottom: 4vh !important;
+}
+
+.glider-slide {
+  justify-content: space-between !important
+}
+
 div.project-item {
   box-shadow: -9px 16px 15px 5px #a9a9a9
 }
