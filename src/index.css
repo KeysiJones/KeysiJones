@@ -65,7 +65,6 @@ img#thug {
   -webkit-animation: cubic-bezier(0.22, 0.61, 0.36, 1);
   animation-name: from_left_to_right;
   animation-duration: 1.3s;
-  max-width: 90%;
 }
 
 body {
