@@ -6,7 +6,7 @@ function AboutMe() {
   const theme = useSelector((state) => state.portfolio.theme);
   const darkMode = theme === "dark";
   const GRAVATAR_HASH = process.env.REACT_APP_GRAVATAR_HASH;
-  const avatarImagePath = `https://www.gravatar.com/avatar/${GRAVATAR_HASH}`;
+  const avatarImagePath = `https://www.gravatar.com/avatar/${GRAVATAR_HASH}?s=280`;
 
   return (
     <div>
