@@ -134,6 +134,13 @@ code {
   }
 }
 
+@media (min-width: 1023px) {
+  .glider{
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+  }
+}
+
 @media (max-width: 758px) {
   div.splide {
     @apply mx-auto mt-8 rounded-sm;

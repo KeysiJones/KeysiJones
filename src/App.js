@@ -1,7 +1,4 @@
 //Libs
-import { useEffect } from "react";
-import Splide from "@splidejs/splide";
-import "@splidejs/splide/dist/css/splide.min.css";
 import React from "react";
 import { useSelector } from "react-redux";
 
@@ -11,7 +8,6 @@ import {
   Carrousel,
   CarrouselCard,
   Footer,
-  RegularCard,
   SectionTitle,
 } from "./components";
 
