@@ -25,7 +25,7 @@ function ContactCard({ footer, icons }) {
               onClick={() =>
                 openLink("https://www.linkedin.com/in/keysijones/")
               }
-              className="mx-8 text-blue-500"
+              className="mx-8 text-blue-400"
             >
               <FontAwesomeIcon icon={icons[0]} size="sm" />
             </button>
