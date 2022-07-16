@@ -29,7 +29,7 @@ function AboutMe() {
                     className={`${darkMode ? "text-white" : "text-gray-700"}`}
                   >
                     <span
-                      className={`text-6xl ${
+                      className={`text-5xl sm:text-6xl mx-4 ${
                         darkMode
                           ? "text-yellow-400 font-bold"
                           : "text-yellow-500"
@@ -52,25 +52,25 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <div className="flex">
-      <div className="flex flex-col m-auto mx-8 sm:mx-12 items-center gap-1 sm:my-12 lg:my-32">
-        <SectionTitle darkMode={darkMode} title="About me" />
-        <SectionDescription
-          darkMode={darkMode}
-          description="I'm a trilingual Fullstack Javascript engineer specializing in React 
+      <div className="flex flex-col xl:flex-row">
+        <div className="flex flex-col m-auto mx-8 sm:mx-12 items-center gap-1 sm:my-12 lg:my-32">
+          <SectionTitle darkMode={darkMode} title="About me" />
+          <SectionDescription
+            darkMode={darkMode}
+            description="I'm a trilingual Fullstack Javascript engineer specializing in React 
             and Node.JS with a passion for building easy-to-use innovative applications that 
             make people's lives easier."
-        />
-      </div>
-      <div className="flex flex-col m-auto mx-8 sm:mx-12 items-center gap-1 sm:my-12 lg:my-32">
-        <SectionTitle darkMode={darkMode} title="Hobbies" />
-        <SectionDescription
-          darkMode={darkMode}
-          description="In my free time i like to go out with my wife, listen 
+          />
+        </div>
+        <div className="flex flex-col m-auto mx-8 sm:mx-12 items-center gap-1 sm:my-12 lg:my-32">
+          <SectionTitle darkMode={darkMode} title="Hobbies" />
+          <SectionDescription
+            darkMode={darkMode}
+            description="In my free time i like to go out with my wife, listen 
             to personal development podcasts, go to the gym and create personal 
             projects to improve my coding skills."
-        />
-      </div>
+          />
+        </div>
       </div>
     </div>
   );
