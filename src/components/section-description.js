@@ -1,12 +1,8 @@
-import { useSelector } from "react-redux";
-
-function SectionDescription({ description }) {
-  const theme = useSelector((state) => state.portfolio.theme);
-  const darkMode = theme === "dark";
+function SectionDescription({ description, darkMode }) {
 
   return (
     <p
-      className={`${
+      className={`font-light ${
         darkMode ? "text-white" : "text-gray-700"
       } text-center text-2xl lg:text-3xl 2xl:text-3xl sm:mx-16 lg:mx-32`}
     >

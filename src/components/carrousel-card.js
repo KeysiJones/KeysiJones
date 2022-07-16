@@ -4,7 +4,7 @@ function CarrouselCard({ cardImage, link, description, openLink }) {
   const theme = useSelector((state) => state.portfolio.theme);
   const darkMode = theme === "dark";
   return (
-      <div className="bg-white rounded-md flex flex-col justify-between h-full mx-4">
+      <div className="bg-white rounded-md flex flex-col justify-between mx-4">
         <img className="rounded-t-xl" alt="project" src={cardImage} />
         <h3
           className={`text-2xl ${
