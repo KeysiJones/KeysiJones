@@ -8,6 +8,10 @@ function AboutMe() {
   const GRAVATAR_HASH = process.env.REACT_APP_GRAVATAR_HASH;
   const avatarImagePath = `https://www.gravatar.com/avatar/${GRAVATAR_HASH}?s=280`;
   const isLargeScreen = window.innerWidth >= 1024;
+<<<<<<< HEAD
+=======
+  const isMobile = window.innerWidth <= 375;
+>>>>>>> 76fd61dadf3e5642c1ffc79b32dd46e3141a3926
 
   return (
     <div>
@@ -47,7 +51,11 @@ function AboutMe() {
                   <span>Fullstack Javascript</span> Engineer
                 </p>
               </div>
+<<<<<<< HEAD
               {window.innerWidth >= 375 ? <ContactCard /> : null}
+=======
+              {!isMobile && <ContactCard />}
+>>>>>>> 76fd61dadf3e5642c1ffc79b32dd46e3141a3926
             </div>
           </div>
         </div>
