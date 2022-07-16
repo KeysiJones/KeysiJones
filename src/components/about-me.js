@@ -17,9 +17,7 @@ function AboutMe() {
           <ThemeSwitcher />
         </div>
         <div
-          className={`lg:flex ${darkMode && isLargeScreen && "bg-gray-700"} ${
-            !darkMode && isLargeScreen && "bg-gray-200"
-          } py-4`}
+          className={`lg:flex py-4`}
         >
           <div className="flex flex-col self-center m-auto sm:mt-12">
             <div id="myinfo" className="rounded-3xl">
