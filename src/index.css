@@ -37,6 +37,10 @@ button {
   justify-content: space-between !important
 }
 
+div.glider-track {
+  width: 30%
+}
+
 div.project-item {
   box-shadow: -9px 16px 15px 5px #a9a9a9
 }
@@ -101,7 +105,7 @@ code {
 
   div#meus-projetos > div.project-item {
     @apply flex flex-col justify-between;
-    width: 35vw;
+    width: 10vw;
   }
 
   div#meus-projetos > div.project-item:hover {
@@ -122,11 +126,11 @@ code {
   }
 
   div#meus-projetos > div > img {
-    width: 60vw;
+    width: 10vw;
   }
 
   div#meus-projetos > div.project-item {
-    width: 20vw;
+    width: 10vw;
   }
 
   div#aboutme {
@@ -175,13 +179,8 @@ code {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(59, 130, 246); 
-  border-radius: 1px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
   background-color: #FBBF24; 
+  border-radius: 1px;
 }
 
 svg#react-logo {
