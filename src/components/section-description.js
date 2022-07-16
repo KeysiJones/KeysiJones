@@ -2,7 +2,7 @@ function SectionDescription({ description, darkMode }) {
 
   return (
     <p
-      className={`${
+      className={`font-light ${
         darkMode ? "text-white" : "text-gray-700"
       } text-center text-2xl lg:text-3xl 2xl:text-3xl sm:mx-16 lg:mx-32`}
     >

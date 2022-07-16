@@ -21,12 +21,6 @@ function AboutMe() {
             !darkMode && isLargeScreen && "bg-gray-200"
           } py-4`}
         >
-          {/* <img
-            id="thug"
-            className="rounded-full mx-auto"
-            alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
-            src={avatarImagePath}
-          /> */}
           <div className="flex flex-col self-center m-auto sm:mt-12">
             <div id="myinfo" className="rounded-3xl">
               <div>
@@ -35,7 +29,7 @@ function AboutMe() {
                     className={`${darkMode ? "text-white" : "text-gray-700"}`}
                   >
                     <span
-                      className={`text-5xl ${
+                      className={`text-6xl ${
                         darkMode
                           ? "text-yellow-400 font-bold"
                           : "text-yellow-500"
@@ -58,14 +52,7 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      {/* <div className="flex flex-col 2xl:flex-row m-auto mx-8 sm:mx-12 items-center gap-1 sm:my-12 lg:my-32"> */}
-      {/* <div className="flex"> */}
-      {/* <img
-          id="thug"
-          className="rounded-sm"
-          alt="Foto de um jovem de 25 anos, de camiseta preta de manga curta e óculos preto"
-          src={avatarImagePath}
-        /> */}
+      <div className="flex">
       <div className="flex flex-col m-auto mx-8 sm:mx-12 items-center gap-1 sm:my-12 lg:my-32">
         <SectionTitle darkMode={darkMode} title="About me" />
         <SectionDescription
@@ -75,17 +62,16 @@ function AboutMe() {
             make people's lives easier."
         />
       </div>
-      {/* </div> */}
-      {/* <div>
-          <SectionTitle darkMode={darkMode} title="Hobbies" />
-          <SectionDescription
-            darkMode={darkMode}
-            description="In my free time i like to go out with my wife, listen 
+      <div className="flex flex-col m-auto mx-8 sm:mx-12 items-center gap-1 sm:my-12 lg:my-32">
+        <SectionTitle darkMode={darkMode} title="Hobbies" />
+        <SectionDescription
+          darkMode={darkMode}
+          description="In my free time i like to go out with my wife, listen 
             to personal development podcasts, go to the gym and create personal 
             projects to improve my coding skills."
-          />
-        </div> */}
-      {/* </div> */}
+        />
+      </div>
+      </div>
     </div>
   );
 }
