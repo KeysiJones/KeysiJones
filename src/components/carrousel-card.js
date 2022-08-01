@@ -22,7 +22,7 @@ function CarrouselCard({ cardImage, link, description, openLink }) {
                 : "bg-yellow-400 text-white"
             }  rounded-b-md w-full`}
           >
-            <p className="font-bold text-4xl mb-4">Live demo</p>
+            <p className="font-semibold text-4xl mb-4">Live demo</p>
           </button>
         </div>
       </div>

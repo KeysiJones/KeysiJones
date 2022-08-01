@@ -13,7 +13,7 @@ function Footer() {
   const darkMode = theme === "dark";
 
   return (
-    <div>
+    <div className="flex flex-col">
       <p
         className={`mt-4 text-center ${
           darkMode ? "text-white" : "text-gray-700"
