@@ -1,39 +1,25 @@
-import { useSelector } from "react-redux";
-import { ContactCard } from "./contact-card";
+import { ContactCard } from './contact-card';
 import {
   faLinkedin,
-  faTwitter,
+  faTelegramPlane,
   faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+} from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
-  const icons = [faLinkedin, faGithub, faTwitter];
   const currentYear = new Date().getFullYear();
-  const theme = useSelector((state) => state.portfolio.theme);
-  const darkMode = theme === "dark";
+  const icons = {
+    linkedin: faLinkedin,
+    github: faGithub,
+    telegram: faTelegramPlane,
+  };
 
   return (
     <div>
-      <p
-        className={`mt-4 text-center ${
-          darkMode ? "text-white" : "text-gray-700"
-        } text-3xl font-bold mb-2`}
-      >
-        Social media
-      </p>
-      <footer
-        className={`${
-          theme.darkMode ? "text-white" : "text-gray-700 border-gray-700"
-        } text-center text-xl`}
-      >
-        <ContactCard icons={icons} footer={true} />
+      <footer className='text-xl text-center text-white'>
+        <ContactCard icons={icons} footer={true} socialMediaIconsSize='lg' />
       </footer>
-      <p
-        className={`${
-          darkMode ? "text-white" : "text-gray-700 border-gray-700"
-        } text-center text-xl`}
-      >
-        &copy; {currentYear} - Keysi Jones. All rights reserved
+      <p className='py-8 text-2xl text-center text-white'>
+        &copy; {currentYear} - Keysi Jones
       </p>
     </div>
   );

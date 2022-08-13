@@ -6,3 +6,4 @@ export * from "./footer";
 export * from "./regular-card";
 export * from "./section-description";
 export * from "./section-title";
+export * from "./HeroSection";
