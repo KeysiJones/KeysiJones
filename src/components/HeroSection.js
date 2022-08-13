@@ -5,7 +5,7 @@ function HeroSection() {
 
   return (
     <div
-      className='flex h-[96vh] py-4 lg:items-center lg:px-40 lg:flex lg:flex-row'
+      className='flex h-[94vh] py-4 lg:items-center lg:px-40 lg:flex lg:flex-row'
       id='hero-section'
     >
       <div
@@ -29,7 +29,7 @@ function HeroSection() {
           className='p-4 m-auto text-2xl bg-yellow-400 mt-14 hero rounded-xl'
           onClick={() => openLink('https://linkedin.com/in/keysijones')}
         >
-          Get in touch now
+          GET IN TOUCH NOW
         </button>
       </div>
     </div>
