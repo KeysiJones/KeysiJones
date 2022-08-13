@@ -1,21 +1,7 @@
-// import {
-//   faLinkedin,
-//   faTwitter,
-//   faGithub,
-//   faTelegram,
-// } from '@fortawesome/free-brands-svg-icons';
-
-// import { ContactCard } from './';
-
 function HeroSection() {
   const GRAVATAR_HASH = process.env.REACT_APP_GRAVATAR_HASH;
   const avatarImagePath = `https://www.gravatar.com/avatar/${GRAVATAR_HASH}?s=280`;
-  // const icons = {
-  //   linkedin: faLinkedin,
-  //   github: faGithub,
-  //   twitter: faTwitter,
-  //   telegram: faTelegram,
-  // };
+  const openLink = (url) => window.open(url, '_blank');
 
   return (
     <div
@@ -39,10 +25,12 @@ function HeroSection() {
           by building <span className='text-yellow-400'>beautiful </span> and{' '}
           <span className='text-yellow-400'>reliable</span> applications
         </p>
-        <button className='p-4 m-auto text-2xl bg-yellow-400 mt-14 hero rounded-xl'>
+        <button
+          className='p-4 m-auto text-2xl bg-yellow-400 mt-14 hero rounded-xl'
+          onClick={() => openLink('https://linkedin.com/in/keysijones')}
+        >
           Get in touch now
         </button>
-        {/* <ContactCard icons={icons} footer={true} socialMediaIconsSize='lg' /> */}
       </div>
     </div>
   );
