@@ -1,10 +1,6 @@
-function SectionTitle({ darkMode, title }) {
+function SectionTitle({ title }) {
   return (
-    <h2
-      className={`${
-        darkMode ? "text-yellow-400" : "text-yellow-500"
-      } font-bold text-center text-4xl sm:text-5xl my-8`}
-    >
+    <h2 className='my-16 text-6xl font-bold text-center text-yellow-400 sm:text-5xl md:text-6xl lg:text-8xl lg:my-28'>
       {title}
     </h2>
   );
