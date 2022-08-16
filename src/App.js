@@ -1,6 +1,8 @@
 //Libs
 import React from 'react';
 import { useSelector } from 'react-redux';
+import Lottie from 'react-lottie';
+import * as animationData from './developer-animation.json';
 
 //Custom components
 import {
@@ -26,11 +28,20 @@ const openLink = (url) => window.open(url, '_blank');
 function App() {
   const theme = useSelector((state) => state.portfolio.theme);
   const darkMode = theme === 'dark';
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
 
   return (
     <div className='bg-gray-800 blink min-w-[412px] h-full'>
       <HeroSection />
       <AboutMe />
+      <Lottie options={defaultOptions} height={400} width={400} />
       <SectionTitle darkMode={darkMode} title='Personal projects' />
       <Carrousel>
         <CarrouselCard

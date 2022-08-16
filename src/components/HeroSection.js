@@ -5,19 +5,19 @@ function HeroSection() {
 
   return (
     <div
-      className='flex h-[94vh] py-4 lg:items-center lg:px-40 lg:flex lg:flex-row'
+      className='flex h-[94vh] py-4 lg:items-center px-4 lg:px-40 lg:flex lg:flex-row'
       id='hero-section'
     >
       <div
         id='myinfo'
-        className='flex flex-col font-semibold text-center rounded-3xl'
+        className='flex flex-col w-full font-semibold text-center rounded-3xl'
       >
         <img
           src={avatarImagePath}
-          className='w-48 m-auto rounded-full sm:w-48 md:w-60'
+          className='w-40 m-auto rounded-full sm:w-48 md:w-60'
           alt="Keysi Jones's avatar"
         />
-        <p className='mt-8 mb-12 text-center text-white text-7xl md:text-8xl lg:text-9xl'>
+        <p className='mt-8 mb-12 text-center text-white text-7xl md:text-8xl lg:text-9xl lg:px-12'>
           I make the <span className='text-yellow-400'>web</span> a better place
           for <span className='text-yellow-400'>you</span>
         </p>
