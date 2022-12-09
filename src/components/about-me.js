@@ -9,7 +9,7 @@ function AboutMe() {
   // const isMobile = window.innerWidth <= 375;
 
   return (
-    <div className='flex flex-col bg-yellow-500 xl:flex-row'>
+    <div className='flex flex-col pb-12 bg-yellow-500 xl:flex-row'>
       <div className='flex flex-col items-center m-auto mx-8 sm:mx-12'>
         <SectionTitle title='About me' />
         <SectionDescription
