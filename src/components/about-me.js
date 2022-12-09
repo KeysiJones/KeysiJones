@@ -1,12 +1,9 @@
 import { useSelector } from 'react-redux';
 import { SectionDescription, SectionTitle } from './';
-// import { ThemeSwitcher } from './theme-switcher';
 
 function AboutMe() {
   const theme = useSelector((state) => state.portfolio.theme);
   const darkMode = theme === 'dark';
-  // const isLargeScreen = window.innerWidth >= 1024;
-  // const isMobile = window.innerWidth <= 375;
 
   return (
     <div className='flex flex-col pb-12 bg-yellow-500 xl:flex-row'>

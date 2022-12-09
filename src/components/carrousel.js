@@ -5,7 +5,7 @@ function Carrousel({ children }) {
     <Glider
       draggable
       hasDots
-      slidesToShow={2.5}
+      slidesToShow={2}
       slidesToScroll={1}
       responsive={[
         {
@@ -23,7 +23,7 @@ function Carrousel({ children }) {
           breakpoint: 768,
           settings: {
             // Set to `auto` and provide item width to adjust to viewport
-            slidesToShow: 2.5,
+            slidesToShow: 2,
             slidesToScroll: 'auto',
             itemWidth: 30,
             duration: 0.25,
@@ -33,7 +33,7 @@ function Carrousel({ children }) {
           // screens greater than >= 1024px
           breakpoint: 1024,
           settings: {
-            slidesToShow: 3.5,
+            slidesToShow: 2,
             slidesToScroll: 1,
             itemWidth: 25,
             duration: 0.25,
