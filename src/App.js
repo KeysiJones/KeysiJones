@@ -26,8 +26,8 @@ import quiz from './fotos/quiz.jpg';
 const openLink = (url) => window.open(url, '_blank');
 
 function App() {
-  const theme = useSelector((state) => state.portfolio.theme);
-  const darkMode = theme === 'dark';
+  //const theme = useSelector((state) => state.portfolio.theme);
+  //const darkMode = theme === 'dark';
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -41,8 +41,8 @@ function App() {
     <div className='bg-gray-800 blink min-w-[412px] h-full'>
       <HeroSection />
       <AboutMe />
-      <Lottie options={defaultOptions} height={400} width={400} />
-      <SectionTitle darkMode={darkMode} title='Personal projects' />
+      {/*<Lottie options={defaultOptions} height={400} width={400} />*/}
+      <SectionTitle title='Personal projects' className='text-yellow-500'/>
       <Carrousel>
         <CarrouselCard
           link='https://keysijones-blog.vercel.app/'

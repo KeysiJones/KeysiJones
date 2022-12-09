@@ -16,7 +16,7 @@ function Footer() {
   return (
     <div>
       <footer className='text-xl text-center text-white'>
-        <ContactCard icons={icons} footer={true} socialMediaIconsSize='lg' />
+        <ContactCard icons={icons} footer={true} socialMediaIconsSize='md' />
       </footer>
       <p className='py-8 text-2xl text-center text-white'>
         &copy; {currentYear} - Keysi Jones

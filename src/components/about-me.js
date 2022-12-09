@@ -9,9 +9,9 @@ function AboutMe() {
   // const isMobile = window.innerWidth <= 375;
 
   return (
-    <div className='flex flex-col xl:flex-row'>
+    <div className='flex flex-col bg-yellow-500 xl:flex-row'>
       <div className='flex flex-col items-center m-auto mx-8 sm:mx-12'>
-        <SectionTitle darkMode={darkMode} title='About me' />
+        <SectionTitle title='About me' />
         <SectionDescription
           darkMode={darkMode}
           description="I'm Keysi Jones, a trilingual Fullstack Javascript engineer specializing in React 
