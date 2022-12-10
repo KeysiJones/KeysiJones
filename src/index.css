@@ -38,6 +38,10 @@ button {
   margin-bottom: 4vh !important;
 }
 
+.draggable {
+  overflow: auto;
+}
+
 .glider-slide {
   justify-content: space-between !important;
 }
