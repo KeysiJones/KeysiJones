@@ -48,7 +48,11 @@ button {
 
 div.glider-track {
   width: 30%;
-  padding: 6rem;
+  padding: 0.5rem;
+
+  @media all and (min-width: 820px) {
+    padding: 6rem;
+  }
 }
 
 div.project-item {
