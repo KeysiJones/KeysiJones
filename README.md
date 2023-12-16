@@ -75,12 +75,6 @@ Areas of Expertise/Interest: Frontend Development, Backend Development (Node) an
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=KeysiJones&show_icons=true&theme=vision-friendly-dark">
 </p>
-<h3>
-⚡ Fun fact: I live in apartment 404 😂
-</h3>
-<p align="left">
-<img src="https://external-preview.redd.it/U5Z6Tx85_hs_TV5Sm7990ckwCMX9LfU6upyLsoGJJdA.jpg?auto=webp&s=4fd81ce826fdc4b11ed98d1375edd643b23dba9c" width="50%" style="border-radius: 10px; margin-top: 10px;"/>
-</p>
 
 ### My personal portfolio
 
